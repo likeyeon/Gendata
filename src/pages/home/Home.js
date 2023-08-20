@@ -5,7 +5,7 @@ export default function Home() {
     <>
       <Gnb />
       <br />
-      Hello world!
+      Hello world(edit)!
     </>
   );
 }
