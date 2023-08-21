@@ -1,6 +1,6 @@
 import Gnb from "../../components/gnb/Gnb";
 
-import styles from "./AiDevelopment.module.css";
+import styles from "./AiDevelopment.module.scss";
 
 import card1 from "../../assets/ai-development/card1.png";
 import card2 from "../../assets/ai-development/card2.png";
@@ -26,7 +26,9 @@ export default function AiDevelopment() {
     <>
       <Gnb />
       <br />
-      
+      <div>
+        <AiDevlopmentTitle />
+      </div>
     </>
   );
 }
