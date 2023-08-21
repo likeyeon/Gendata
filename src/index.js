@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+// import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
