@@ -4,8 +4,6 @@ export default function About() {
   return (
     <>
       <Gnb />
-      <br />
-      Hello about!
     </>
   );
 }
