@@ -1,7 +1,5 @@
 import Gnb from "../../components/gnb/Gnb";
 
-import styles from "./AiDevelopment.module.css";
-
 import card1 from "../../assets/ai-development/card1.png";
 import card2 from "../../assets/ai-development/card2.png";
 import card3 from "../../assets/ai-development/card3.png";
@@ -19,14 +17,11 @@ import thumbsUp from "../../assets/ai-development/emoji-thumbsUp.png";
 import tools from "../../assets/ai-development/emoji-tools.png";
 import files from "../../assets/ai-development/files.png";
 
-import AiDevlopmentTitle from "./components/AiDevlopmentTitle";
-
 export default function AiDevelopment() {
   return (
     <>
       <Gnb />
       <br />
-      
     </>
   );
 }
