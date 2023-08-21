@@ -1,0 +1,37 @@
+.applicationBackground {
+  margin: 0 20% 0 20%;
+    padding: 0 15px 0 15px;
+    justify-content: center;
+  
+    background-image: linear-gradient(to bottom, #f5f5f6, white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    height: 1141px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .applicationText{
+    font-size: 45px;
+  }
+  .applicationContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .applicationItems {
+    display: inline-block;
+    width: auto;
+    height: 167px;
+    margin: 17px 0 17px 0;
+  }
+  .character{
+    width: auto;
+  height: 307px;
+  position: relative;
+  bottom: 110px;
+  left: 22px;
+  }
