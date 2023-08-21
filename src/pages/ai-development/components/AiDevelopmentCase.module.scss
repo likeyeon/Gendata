@@ -4,18 +4,20 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.aiDevlopmentCaseTitle{
-  font-size: 45px;
-  padding-bottom: 60px;
-}
-.aiDevlopmentCaseContainer {
-  width: 75%;
-  display: flex;
-  justify-content: space-around;
-}
-.aiDevlopmentCaseImages {
-  width: auto;
-    height: 278px;
-    padding: 15px;
+
+  .aiDevlopmentCaseTitle{
+    font-size: 45px;
+    padding-bottom: 60px;
+  }
+  .aiDevlopmentCaseContainer {
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    
+    .aiDevlopmentCaseImages {
+      width: auto;
+        height: 278px;
+        padding: 15px;
+    }
+  }
 }
