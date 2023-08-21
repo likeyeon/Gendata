@@ -4,8 +4,6 @@ export default function Home() {
   return (
     <>
       <Gnb />
-      <br />
-      Hello world(edit)!
     </>
   );
 }
