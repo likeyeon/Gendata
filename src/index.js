@@ -1,12 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./style/reset.css";
-import "./style/style.scss";
+import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
+import AiDevelopment from "./pages/ai-development/AiDevelopment";
+import Education from "./pages/education/Education";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,14 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/ai-development",
+    element: <AiDevelopment />,
+  },
+  {
+    path: "/education",
+    element: <Education />,
   },
 ]);
 
