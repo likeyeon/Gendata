@@ -13,25 +13,28 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    .applicationText{
+      font-size: 45px;
+    }
+    .applicationContainer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      
+      .applicationItems {
+        display: inline-block;
+        width: auto;
+        height: 167px;
+        margin: 17px 0 17px 0;
+      }
+      .character{
+        width: auto;
+      height: 307px;
+      position: relative;
+      bottom: 110px;
+      left: 22px;
+      }
+    }  
   }
-  .applicationText{
-    font-size: 45px;
-  }
-  .applicationContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .applicationItems {
-    display: inline-block;
-    width: auto;
-    height: 167px;
-    margin: 17px 0 17px 0;
-  }
-  .character{
-    width: auto;
-  height: 307px;
-  position: relative;
-  bottom: 110px;
-  left: 22px;
-  }
+  
