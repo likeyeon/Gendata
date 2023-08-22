@@ -8,21 +8,22 @@ const AiDevelopmentRecommend = () => {
   return (
     <div className={styles.recommendBackground}>
       <div className={styles.recommendContent}>
-        <img className={styles.recommendGridImg} src={files} alt="files" />
-        <div>
-          <h2 className={styles.recommendGridTitle}>
+        <div className={styles.recommendContentText}>
+          <h2 className={styles.recommendContentTitle}>
             우리 회사에 적합한 AI 기술과 모델,
             <br />
             젠데이터에서 추천받으세요.
           </h2>
-          <p className={styles.recommendGirdText}>
+          <p className={styles.recommendContentDescription}>
             우리 회사 비즈니스에 맞는 AI 기술을 찾고 계시나요?
-            <br />
+          </p>
+          <p className={styles.recommendContentDescription}>
             비즈니스에 적합한 AI 모델을 맞춤형으로 추천해드립니다.
           </p>
         </div>
+        <img className={styles.recommendContentImges} src={files} alt="files" />
       </div>
-      <div className={styles.recommendContentImges}>
+      <div className={styles.recommendContentCardsTable}>
         <img
           className={styles.recommendContentImgesCards}
           src={card5}

@@ -6,30 +6,52 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.recommendContent {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-}
-.recommendGridImg {
-  height: 320px;
-}
-.recommendGridTitle {
-  text-align: left;
-  font-size: 50px;
-}
-.recommendGirdText{
-  text-align: left;
-font-size: 18px;
-}
 
-.recommendContentImges{
-  width: 60%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.recommendContentImgesCards {
-  height: 229px;
+  .recommendContent {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 60%;
+
+    .recommendContentImges {
+      height: 300px;
+      margin-left: -100px; // 확인필요
+      padding: 0;
+
+      position: relative;
+      z-index: 0;
+    }
+    .recommendContentText {
+      margin-bottom: 60px;
+
+      position: relative;
+      z-index: 1;
+      letter-spacing: -2px;
+
+      .recommendContentTitle {
+        text-align: left;
+        font-size: 50px;
+        font-family: 'Spoqa Han Sans Neo', 'sans-serif';//폰트확인
+      }
+      .recommendContentDescription{
+        text-align: left;
+        font-size: 18px;
+        margin: 0;
+        padding: 4px 0;
+      }
+  
+    }
+  }
+  
+  .recommendContentCardsTable{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .recommendContentImgesCards {
+      height: 229px;
+    }
+  }
+  
 }
