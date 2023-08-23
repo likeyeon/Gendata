@@ -1,5 +1,8 @@
-.recommendBackground{
-  height: 800px;
+@use "../../../style/util";
+
+.recommendBackground {
+  width: 100vw;
+  height: util.rem(800px);
   background-color: black;
   color: white;
   display: flex;
@@ -7,51 +10,57 @@
   justify-content: center;
   align-items: center;
 
-  .recommendContent {
-    position: relative;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    width: 60%;
+}
 
-    .recommendContentImges {
-      height: 300px;
-      margin-left: -100px; // 확인필요
-      padding: 0;
+.recommendContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 60%;
 
-      position: relative;
-      z-index: 0;
-    }
-    .recommendContentText {
-      margin-bottom: 60px;
 
-      position: relative;
-      z-index: 1;
-      letter-spacing: -2px;
+}
 
-      .recommendContentTitle {
-        text-align: left;
-        font-size: 50px;
-        font-family: 'Spoqa Han Sans Neo', 'sans-serif';//폰트확인
-      }
-      .recommendContentDescription{
-        text-align: left;
-        font-size: 18px;
-        margin: 0;
-        padding: 4px 0;
-      }
-  
-    }
+.recommendContentImges {
+  height: util.rem(300px);
+  margin-left: util.rem(-100px); // 확인필요
+  padding: 0;
+
+  position: relative;
+  z-index: 0;
+}
+
+.recommendContentText {
+  margin-bottom: util.rem(60px);
+
+  position: relative;
+  z-index: 1;
+  letter-spacing: util.rem(-2px);
+}
+
+.recommendContentTitle {
+  text-align: left;
+  font-size: util.rem(50px);
+}
+
+.recommendContentDescription {
+  text-align: left;
+  font-size: util.rem(18px);
+  margin: 0;
+  padding: util.rem(4px) 0;
+}
+
+.recommendContentCardsTable {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.recommendContentImgesCards {
+  height: util.rem(229px);
+
+  @media (max-width: 992px) {
+    display: none;
   }
-  
-  .recommendContentCardsTable{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-    .recommendContentImgesCards {
-      height: 229px;
-    }
-  }
-  
 }
