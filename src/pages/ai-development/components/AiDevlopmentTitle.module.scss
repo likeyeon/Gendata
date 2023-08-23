@@ -1,15 +1,22 @@
-.aiDevelopmentTitle {
-  height: 510px;
+@use "util";
+
+
+
+.AiDevlopmentTitle {
+  height: util.rem(510px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.title {
+.Title {
   color: black;
-  font-size: 70px; /*45px*/
+  font-size:  util.rem(70px); /*45px*/
 }
-.text{
-  font-size: 20px;
+.Text{
+  text-align: center;
+  font-size:  util.rem(20px);
+  margin: 0;
+  padding: 0 0  util.rem(10px) 0;
 }
