@@ -152,8 +152,13 @@ const Gnb = () => {
                 </ul>
               </li>
               <li className={styles.gnb_item}>
-                <a className={styles.gnb_item_a} href="/semoAI">
-                  AI 비즈니스 매칭
+                <a className={styles.gnb_item_a} href="/AI-data-project">
+                  프로젝트 공고
+                </a>
+              </li>
+              <li className={styles.gnb_item}>
+                <a className={styles.gnb_item_a} href="/AI-service-paga">
+                  AI 서비스
                 </a>
               </li>
               <li className={styles.gnb_item}>
@@ -267,8 +272,13 @@ const Gnb = () => {
                 </ul>
               </li>
               <li className={styles.depth_01}>
-                <a href="/semoAI">
-                  <span>AI 비즈니스 매칭</span>
+                <a href="/AI-data-project">
+                  <span>프로젝트 공고</span>
+                </a>
+              </li>
+              <li className={styles.depth_01}>
+                <a href="/AI-service-paga">
+                  <span>AI 서비스</span>
                 </a>
               </li>
               <li className={styles.depth_01}>
