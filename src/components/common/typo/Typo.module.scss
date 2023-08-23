@@ -1,0 +1,23 @@
+@use "../../../style/util";
+
+.titleBig {
+  font-size: util.rem(70px);
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+
+  @media (max-width: 992px){
+    font-size: util.rem(45px);
+  }
+}
+
+.contents {
+  font-size: util.rem(20px);
+  line-height: 2;
+  text-align: center;
+
+  @media (max-width: 992px){
+    font-size: util.rem(15px);
+    line-height: 1.5;
+  }
+}

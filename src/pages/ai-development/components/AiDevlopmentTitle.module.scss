@@ -1,6 +1,4 @@
-@use "util";
-
-
+@use "../../../style/util";
 
 .AiDevlopmentTitle {
   height: util.rem(510px);
@@ -10,13 +8,13 @@
   align-items: center;
 }
 
-.Title {
-  color: black;
-  font-size:  util.rem(70px); /*45px*/
-}
-.Text{
-  text-align: center;
-  font-size:  util.rem(20px);
-  margin: 0;
-  padding: 0 0  util.rem(10px) 0;
-}
+// .Title {
+//   color: black;
+//   font-size:  util.rem(70px); /*45px*/
+// }
+// .Text{
+//   text-align: center;
+//   font-size:  util.rem(20px);
+//   margin: 0;
+//   padding: 0 0  util.rem(10px) 0;
+// }
