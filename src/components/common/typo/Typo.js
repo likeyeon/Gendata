@@ -1,15 +1,12 @@
 import React from "react";
 import styles from "./Typo.module.scss";
 
-export const TitleBig = ({ title }) => {
-  return <span className={styles.titleBig}>{title}</span>;
+export const TitleBig = ({ title, className }) => {
+  return <span className={`${styles.title} ${className}`}>{title}</span>;
 };
-
-export const Contents = ({ contents }) => {
-  return (
-    <span
-      className={styles.contents}
-      dangerouslySetInnerHTML={{ __html: contents }}
-    ></span>
-  );
+export const Subtitle = ({ subtitle, className }) => {
+  return <span className={`${styles.subtitle} ${className}`}>{subtitle}</span>;
+};
+export const Contents = ({ contents, className }) => {
+  return <span className={`${styles.contents} ${className}`}>{contents}</span>;
 };
