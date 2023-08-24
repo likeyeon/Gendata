@@ -191,7 +191,7 @@ const Gnb = () => {
                 </a>
               </li>
               <li className={styles.depth_01}>
-                <a href="#!" onClick={handleServiceClick}>
+                <div onClick={handleServiceClick}>
                   <span>서비스</span>
                   <span className={styles.icon_chervron}>
                     <FontAwesomeIcon
@@ -199,11 +199,11 @@ const Gnb = () => {
                       rotation={serviceDegrees}
                     />
                   </span>
-                </a>
+                </div>
 
                 <ul className={isServiceFolded ? styles.folded : styles.spread}>
                   <li className={styles.depth_02}>
-                    <a href="#!" onClick={handleDataClick}>
+                    <div onClick={handleDataClick}>
                       <span>데이터 구축</span>
                       <span className={styles.icon_chervron}>
                         <FontAwesomeIcon
@@ -211,7 +211,7 @@ const Gnb = () => {
                           rotation={dataDegrees}
                         />
                       </span>
-                    </a>
+                    </div>
 
                     <ul
                       className={isDataFolded ? styles.folded : styles.spread}
