@@ -1,0 +1,17 @@
+@use "../../style/colors";
+@use "../../style/util";
+
+.form_button_wrapper {
+  padding: 0 50px;
+  text-align: center;
+
+  & > button {
+    padding: util.rem(18px) util.rem(70px);
+    background-color: #252a6a;
+    font-size: util.rem(17px);
+    color: colors.$white_c01;
+    font-weight: 500;
+    border-radius: 37px;
+    border: none;
+  }
+}
