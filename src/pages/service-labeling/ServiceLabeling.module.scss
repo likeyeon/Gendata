@@ -1,0 +1,14 @@
+@use "../../style/util";
+
+.Container {
+  max-width: util.rem(1280px);
+}
+.Padding {
+  padding-top: util.rem(110px);
+  padding-bottom: util.rem(30px);
+}
+
+// @media #{util.$mobileSize} {
+@media screen and (max-width:util.rem(991px)) {
+
+}

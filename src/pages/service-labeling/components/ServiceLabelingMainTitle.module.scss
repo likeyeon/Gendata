@@ -1,0 +1,22 @@
+@use "../../../style/util";
+
+.TitleWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: util.rem(15px);
+  margin-bottom: util.rem(15px);
+}
+.Title {
+  font-size: util.rem(70px); /*45px*/
+  font-weight: 700;
+  line-height: 2;
+}
+.TextWeight {
+  font-weight: 700;
+}
+
+@media screen and (max-width:util.rem(991px)) {
+  
+}
