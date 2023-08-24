@@ -1,15 +1,35 @@
-import Gnb from "../../components/gnb/Gnb";
-import Form from "../../components/form/Form";
+import ContactTitle from "./components/ContactTitle";
+import Form from "./components/Form";
 import styles from "./Contact.module.scss";
+import Inside from "../../components/inside/Inside";
+import FormButton from "../../components/form/FormButton";
+import PrivacyPolicyCheck from "../../components/form/PrivacyPolicyCheck";
+import { useState } from "react";
 
 const Contact = () => {
+  const [modal, openModal] = useState(false);
+
+  const handleOpenModal = () => {
+    openModal(!modal);
+  };
+
   return (
-    <>
-      <Gnb />
-      <main className={styles.main}>
-        <Form />
-      </main>
-    </>
+    <div onClick={() => modal && openModal(false)}>
+      <ContactTitle />
+      <div className={styles.section1}>
+        <main className={styles.main}>
+          <Inside>
+            <Form>
+              <PrivacyPolicyCheck
+                modal={modal}
+                handleOpenModal={handleOpenModal}
+              />
+            </Form>
+            <FormButton innerText={"문의 완료!"} />
+          </Inside>
+        </main>
+      </div>
+    </div>
   );
 };
 

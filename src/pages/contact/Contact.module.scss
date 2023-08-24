@@ -1,2 +1,10 @@
 @use "../../style/colors";
 @use "../../style/util";
+
+.main {
+  width: 100%;
+}
+
+.section1 {
+  margin-bottom: util.rem(180px);
+}
