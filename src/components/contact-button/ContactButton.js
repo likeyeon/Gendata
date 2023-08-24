@@ -3,9 +3,9 @@ import { Subtitle } from "../common/typo/Typo";
 import React, { useState, useCallback, useEffect } from "react";
 
 const ContactButton = () => {
-  const [titelString, setTitleString] = useState("");
-  const maxWidthTitle = `우리 회사에 딱 맞는 AI 서비스를 찾아보세요!`;
-  const minWidthTitle = `우리 회사에 딱 맞는 <br />AI 서비스를 찾아보세요!`;
+  const [titelString, setTitleString] = useState(<></>);
+  const maxWidthTitle = <>우리 회사에 딱 맞는 AI 서비스를 찾아보세요!</>;
+  const minWidthTitle = <>우리 회사에 딱 맞는 <br />AI 서비스를 찾아보세요!</>;
   const tabletMql = window.matchMedia("screen and (min-width:992px)");
   const changeEventHandler = useCallback(
     (e) => {
@@ -32,7 +32,7 @@ const ContactButton = () => {
     <div className={styles.ContactButtonBackground}>
       <Subtitle
         className={`${styles.ContactButtonTitle}`}
-        subtitle={`${titelString}`}
+        subtitle={titelString}
       />
       <a href="/about">
         <button className={styles.ContactButton}>바로 문의하기 &gt;</button>
