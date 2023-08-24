@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./Typo.module.scss";
 
-export const TitleBig = ({ title, className }) => {
-  return <span className={`${styles.title} ${className}`}>{title}</span>;
+export const TitleBig = ({ titleBig, className }) => {
+  return <span className={`${styles.titleBig} ${className}`}>{titleBig}</span>;
 };
 export const Subtitle = ({ subtitle, className }) => {
   return <span className={`${styles.subtitle} ${className}`}>{subtitle}</span>;
