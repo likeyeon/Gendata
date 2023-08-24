@@ -1,0 +1,35 @@
+@use "../../../style/util";
+
+.CategoryWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding-top: util.rem(110px);
+  padding-bottom: util.rem(110px);
+}
+.CategoryList {
+  display: flex;
+  max-width: util.rem(1280px);
+  margin: 0 auto;
+}
+.CategoryItem {
+  height: util.rem(150px);
+  border: 1px solid red;
+}
+.CategoryItem:not(:first-of-type) {
+  margin-left: util.rem(30px);
+}
+.CategoryItem img{
+  max-width: 100%;
+}
+
+@media screen and (max-width:util.rem(991px)) {
+  .CategoryWrap {
+    padding-top: util.rem(30px);
+    padding-bottom: util.rem(30px);
+  }
+  .CategoryItem {
+    height: util.rem(100px);
+  }
+}

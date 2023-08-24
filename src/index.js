@@ -41,17 +41,17 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 
 function initHamburgerMenu() {
-  const hamburgerEl = document.querySelector('.gnb .hamburger');
-  const menuEl = document.querySelector('.gnb .menu');
-  const mobileMql = window.matchMedia('(max-width: 991px)');
+  // const hamburgerEl = document.querySelector('.gnb .hamburger');
+  // const menuEl = document.querySelector('.gnb .menu');
+  // const mobileMql = window.matchMedia('(max-width: 991px)');
 
-  mobileMql.onchange = (event) => {
-    !event.matches && menuEl.classList.remove('active');
-  }
+  // mobileMql.onchange = (event) => {
+  //   !event.matches && menuEl.classList.remove('active');
+  // }
 
-  hamburgerEl.addEventListener('click', () => {
-    menuEl.classList.toggle('active');
-  })
+  // hamburgerEl.addEventListener('click', () => {
+  //   menuEl.classList.toggle('active');
+  // })
 }
  
 
