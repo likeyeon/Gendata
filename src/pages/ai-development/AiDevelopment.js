@@ -1,10 +1,11 @@
-import Gnb from "../../components/gnb/Gnb";
+import ContactButton from "../../components/contact-button/ContactButton";
+import AiDevlopmentTitle from "./components/AiDevlopmentTitle";
 
 export default function AiDevelopment() {
   return (
     <>
-      <Gnb />
-      <br />
+      <AiDevlopmentTitle />
+      <ContactButton />
     </>
   );
 }
