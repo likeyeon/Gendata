@@ -2,15 +2,10 @@ import styles from "./ContactButton.module.scss";
 import { Subtitle } from "../common/typo/Typo";
 import React, { useState, useCallback, useEffect } from "react";
 
-const ContactButton = () => {
+const ContactButton = ({ maxTitle, minTitle, className }) => {
   const [titelString, setTitleString] = useState(<></>);
-  const maxWidthTitle = <>우리 회사에 딱 맞는 AI 서비스를 찾아보세요!</>;
-  const minWidthTitle = (
-    <>
-      우리 회사에 딱 맞는 <br />
-      AI 서비스를 찾아보세요!
-    </>
-  );
+  const maxWidthTitle = <>{maxTitle}</>;
+  const minWidthTitle = <>{minTitle}</>;
   const tabletMql = window.matchMedia("screen and (min-width:992px)");
   const changeEventHandler = useCallback(
     (e) => {
@@ -36,7 +31,7 @@ const ContactButton = () => {
   return (
     <div className={styles.ContactButtonBackground}>
       <Subtitle
-        className={`${styles.ContactButtonTitle}`}
+        className={`${styles.ContactButtonTitle} ${className}`}
         subtitle={titelString}
       />
       <a href="/about">
