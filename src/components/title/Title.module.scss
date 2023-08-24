@@ -1,6 +1,6 @@
-@use "../../../style/util";
+@use "../../style/util";
 
-.AiDevlopmentTitle {
+.title {
   height: util.rem(510px);
   display: flex;
   flex-direction: column;
