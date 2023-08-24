@@ -1,3 +1,5 @@
+@use "../../style/util";
+
 .ContactButtonBackground {
   background-image: url(../../assets/contactButtonBackground.png);
   background-size: cover;
@@ -10,20 +12,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  .ContactButtonTitle {
-    font-size: 45px;
-    font-weight: 700;
-    margin: 0;
+.ContactButtonTitle {
+  @media (max-width: 992px) {
+    font-size: util.rem(33px);
   }
-  .ContactButton {
-    background-color: #41497a;
-    color: #ffffff;
-    border: none;
-    font-size: 18px;
-    font-weight: 700;
-    cursor: pointer;
-    margin: 50px;
-    padding: 17px 40px;
-  }
+}
+
+.minContactButtonTitle>span {
+  display: none;
+
+  // @media (max-width: 992px) {
+  //   display: block;
+  // }
+}
+
+.ContactButton {
+  background-color: #41497a;
+  color: #ffffff;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 50px;
+  padding: 17px 40px;
 }
