@@ -1,0 +1,9 @@
+@use "../../style/util";
+
+.title {
+  height: util.rem(510px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
