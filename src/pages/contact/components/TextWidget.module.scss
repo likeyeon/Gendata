@@ -1,0 +1,36 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+.textWidget_wrapper {
+  width: util.rem(1000px);
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+
+  @media screen and (max-width: util.rem(800px)) {
+    width: 100%;
+  }
+}
+
+.textWidget {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: util.rem(40px) util.rem(50px);
+}
+.textWidget_p {
+  padding: util.rem(15px) util.rem(40px);
+  background-color: #e5e5e5;
+  border-radius: 15px;
+  width: fit-content;
+}
+.textWidget_span {
+  color: rgb(123, 123, 123);
+  font-size: util.rem(18px);
+  font-weight: 500;
+  line-height: 1.2;
+
+  @media screen and (max-width: util.rem(992px)) {
+    font-size: util.rem(15px);
+  }
+}
