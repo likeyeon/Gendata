@@ -2,7 +2,8 @@ import EducitionTitle from "./components/educationTitle/EducationTitle";
 import EducationIntro from "./components/educationIntro/EducationIntro";
 import EducationSystem from "./components/educationSystem/EducationSystem";
 import EducationReview from "./components/educationReview/EducationReview";
-//import Contect from "../../components/";
+import Contact from "./components/Contact";
+
 export default function Education() {
   return (
     <>
@@ -10,6 +11,7 @@ export default function Education() {
       <EducationIntro />
       <EducationSystem />
       <EducationReview />
+      <Contact />
     </>
   );
 }
