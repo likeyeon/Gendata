@@ -1,5 +1,5 @@
 import EducitionTitle from "./components/educationTitle/EducationTitle";
-import EducationIntro from "./components/educationTitle/EducationIntro";
+import EducationIntro from "./components/educationIntro/EducationIntro";
 export default function Education() {
   return (
     <>
