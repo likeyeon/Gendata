@@ -1,0 +1,60 @@
+@use "../../../../../../style/util";
+@use "../../../../../../style/colors";
+
+.TabOuterWrap {
+  background-color: #f5f5f5;
+  padding: util.rem(150px) 0;
+}
+.TabInnerWrap {
+  width: util.rem(1280px);
+  margin: 0 auto;
+}
+.TabTitle {
+  font-size: util.rem(50px);
+  font-weight: 700;
+  line-height: util.rem(80px);
+  margin-bottom: util.rem(60px);
+  > span {
+    color: colors.$blue_c01; 
+  }
+}
+.TabMenu {
+  display: flex;
+  margin: util.rem(60px) 0;
+  font-weight: 700;
+  font-size: util.rem(18px);
+}
+.TabItem {
+  padding: util.rem(17px) util.rem(30px);
+  border-radius: 50px;
+}
+.TabItem.Focused {
+  background-color: #E2E2E2;;
+}
+.TabContentWrap {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+    "TabContentTitle TabContentImgWrap"
+    "TabContentDesc TabContentImgWrap"
+    "TabBtn TabContentImgWrap";
+  
+  > .TabContentTitle{grid-area: TabContentTitle;};
+  > .TabContentDesc{grid-area: TabContentDesc};
+  > .TabBtn{grid-area: TabBtn};
+  > .TabContentImgWrap{grid-area: TabContentImgWrap; width: util.rem(265px)};
+
+  > .TabContentImgWrap img {max-width: 100%;}
+
+  max-width: util.rem(1093px);
+  padding: util.rem(114px) util.rem(85px);
+  background-color: colors.$white_c01;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:util.rem(991px)) {
+
+}
+
+
+
