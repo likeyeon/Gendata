@@ -16,7 +16,7 @@
   justify-content: center;
   align-items: center;
 
-  @media (max-width: 992px) {
+  @media (max-width: util.rem(992px)) {
     height: util.rem(300px);
   }
 }
@@ -24,7 +24,7 @@
 .edcationTitle {
   margin-top: util.rem(75px);
 
-  @media (max-width: 992px) {
+  @media (max-width: util.rem(992px)) {
     margin-top: util.rem(60px);
   }
 }
@@ -33,7 +33,7 @@
 .titleBlue {
   font-size: util.rem(64px);
 
-  @media (max-width: 992px) {
+  @media (max-width: util.rem(992px)) {
     font-size: util.rem(36px);
   }
 }
@@ -46,7 +46,7 @@
 .edcationSubtitle {
   font-size: util.rem(36px);
 
-  @media (max-width: 992px) {
+  @media (max-width: util.rem(992px)) {
     font-size: util.rem(24px);
   }
 }
