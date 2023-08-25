@@ -23,14 +23,14 @@ const router = createBrowserRouter([
   },
   {
     path: "/gendata-service-labeling",
-    element: <ServiceLabeling/>
+    element: <ServiceLabeling />,
   },
   {
     path: "/ai-development",
     element: <AiDevelopment />,
   },
   {
-    path: "/education",
+    path: "/ai-education",
     element: <Education />,
   },
   {
