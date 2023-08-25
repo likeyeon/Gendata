@@ -13,7 +13,8 @@ const Title = ({
   const titleText = <>{title}</>;
   const maxWidthContents = <>{maxContents}</>;
   const minWidthContents = <>{minContents}</>;
-  const tabletMql = window.matchMedia("screen and (min-width:992px)");
+
+  const tabletMql = window.matchMedia("screen and (min-width:util.rem(992px))");
 
   const changeEventHandler = useCallback(
     (e) => {
