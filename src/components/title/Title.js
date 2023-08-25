@@ -13,8 +13,8 @@ const Title = ({
   const titleText = <>{title}</>;
   const maxWidthContents = <>{maxContents}</>;
   const minWidthContents = <>{minContents}</>;
-
   const tabletMql = window.matchMedia("screen and (min-width:992px)");
+
   const changeEventHandler = useCallback(
     (e) => {
       if (e.matches) {
@@ -30,6 +30,12 @@ const Title = ({
   useEffect(() => {
     if (window.innerWidth > 992) {
       setContentsString(maxWidthContents);
+    }
+
+    if (tabletMql.matches) {
+      setContentsString(maxWidthContents);
+    } else {
+      setContentsString(minWidthContents);
     }
 
     return () => {
