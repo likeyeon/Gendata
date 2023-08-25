@@ -3,7 +3,7 @@
 .recommendBackground {
   width: 100vw;
   height: util.rem(800px);
-  background-color: black;
+  background-color: gray;
   color: white;
   display: flex;
   flex-direction: column;
@@ -40,7 +40,7 @@
 
 .recommendContentTitle {
   text-align: left;
-  font-size: util.rem(50px);
+  // font-size: util.rem(50px);
 }
 
 .recommendContentDescription {
