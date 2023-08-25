@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import styles from "./Gnb.module.scss";
 import logo_dark from "../../assets/gnb/logo_dark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,10 +34,18 @@ const Gnb = () => {
   const dataDegrees = isDataFolded ? 0 : 180;
   const eduDegrees = isEduFolded ? 0 : 180;
 
-  const mobileMql = window.matchMedia("(max-width: 991px)");
-  mobileMql.onchange = (event) => {
+  const mqHandler = useCallback((event) => {
     !event.matches && setIsOpen(false);
-  };
+  }, []);
+
+  useEffect(() => {
+    const mobileMql = window.matchMedia("(max-width: 991px)");
+    mobileMql.addEventListener("change", mqHandler);
+
+    return () => {
+      mobileMql.removeEventListener("change", mqHandler);
+    };
+  }, [mqHandler]);
 
   return (
     <header className={styles.header}>

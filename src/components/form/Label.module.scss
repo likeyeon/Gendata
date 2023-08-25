@@ -1,0 +1,12 @@
+@use "../../style/colors";
+@use "../../style/util";
+
+.label {
+  font-size: util.rem(18px);
+  width: 100%;
+  font-weight: 500;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: util.rem(8px);
+  color: #363636;
+}

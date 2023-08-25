@@ -3,12 +3,16 @@
 .recommendBackground {
   width: 100vw;
   height: util.rem(800px);
-  background-color: gray;
+  background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: util.rem(992px)) {
+    height: util.rem(657px)
+  }
 
 }
 
@@ -18,36 +22,60 @@
   grid-template-columns: 1fr auto;
   width: 60%;
 
+  @media (max-width: util.rem(992px)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
 
 .recommendContentImges {
-  height: util.rem(300px);
-  margin-left: util.rem(-100px); // 확인필요
+  max-height: util.rem(300px);
+  height: 100%;
+  // margin-left: util.rem(-100px); // 확인필요
   padding: 0;
 
-  position: relative;
-  z-index: 0;
+
+  @media (max-width: util.rem(992px)) {
+    max-height: util.rem(300px);
+    height: 40%;
+    text-align: center;
+  }
 }
 
 .recommendContentText {
   margin-bottom: util.rem(60px);
+  display: flex;
+  flex-direction: column;
 
-  position: relative;
-  z-index: 1;
-  letter-spacing: util.rem(-2px);
 }
 
-.recommendContentTitle {
+.recommendContentText>.recommendContentTitle {
   text-align: left;
-  // font-size: util.rem(50px);
+  white-space: nowrap;
+  line-height: 1.5;
+  font-size: util.rem(50px);
+  padding-bottom: util.rem(48px);
+
+  @media (max-width: util.rem(992px)) {
+    font-size: util.rem(24px);
+    text-align: center;
+  }
 }
 
 .recommendContentDescription {
   text-align: left;
+  white-space: nowrap;
   font-size: util.rem(18px);
   margin: 0;
   padding: util.rem(4px) 0;
+
+  @media (max-width: util.rem(992px)) {
+    font-size: util.rem(15px);
+    text-align: center;
+  }
 }
 
 .recommendContentCardsTable {
@@ -55,12 +83,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  @media (max-width: util.rem(992px)) {
+    display: none;
+  }
 }
 
 .recommendContentImgesCards {
-  height: util.rem(229px);
-
-  @media (max-width: 992px) {
-    display: none;
-  }
+  width: auto;
+  max-height: util.rem(229px);
+  height: 100%;
 }
