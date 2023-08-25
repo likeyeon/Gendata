@@ -91,7 +91,9 @@ const Gnb = () => {
                         />
                       </span>
                     </a>
-                    <ul className={styles.dropdown_menu}>
+                    <ul
+                      className={`${styles.dropdown_menu} ${styles.dataBuilding_depth}`}
+                    >
                       <li className={styles.dropdown_menu_li}>
                         <a
                           className={styles.dropdown_menu_li_a}
