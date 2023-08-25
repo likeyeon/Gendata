@@ -1,7 +1,12 @@
-import Home from "./pages/home/Home";
+import Gnb from "./components/gnb/Gnb";
 
-function App() {
-  return <Home />;
-}
+const App = ({ component }) => {
+  return (
+    <>
+      <Gnb />
+      <div className="content">{component}</div>
+    </>
+  );
+};
 
 export default App;
