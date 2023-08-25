@@ -5,58 +5,6 @@
   width: 100%;
 }
 
-.input {
-  width: 100%;
-  font-size: util.rem(15px);
-  border: none !important;
-  border-bottom: 1px solid #e6e6e6 !important;
-  padding: util.rem(10px) 0;
-  height: auto;
-  font: inherit;
-
-  &:focus {
-    outline: none;
-    border-bottom: 2px solid #16357b !important;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
-      -webkit-box-shadow ease-in-out 0.15s;
-  }
-}
-.select {
-  width: 100%;
-  font-size: util.rem(15px);
-  border: none !important;
-  border-bottom: 1px solid #e6e6e6 !important;
-  padding: util.rem(10px) 0;
-  height: auto;
-  padding-right: util.rem(5px) !important;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-option {
-  position: absolute;
-  top: 0;
-}
-
-.textarea {
-  width: 100%;
-  height: util.rem(200px) !important;
-  font-size: util.rem(15px);
-  border: 1px solid #e6e6e6;
-  padding: util.rem(6px) util.rem(12px);
-  font: inherit;
-  line-height: 1.5;
-
-  &:focus {
-    outline: none;
-    border: 2px solid #16357b !important;
-    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
-      -webkit-box-shadow ease-in-out 0.15s;
-  }
-}
-
 .section {
   width: 1000px;
   text-align: left;
@@ -76,20 +24,14 @@ form {
   font-size: util.rem(15px);
 }
 
-.group {
-  width: 50% !important;
-  padding: util.rem(40px) util.rem(50px) !important;
-  margin-bottom: util.rem(15px);
-}
-
-@media (max-width: 991px) {
+@media screen and (max-width: util.rem(991px)) {
   .form {
     display: flex;
     flex-flow: row wrap;
   }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: util.rem(800px)) {
   .section {
     width: 100% !important;
     text-align: left;

@@ -8,6 +8,10 @@
   margin-right: auto;
   font-size: util.rem(18px);
 
+  strong {
+    cursor: pointer;
+  }
+
   @media screen and (max-width: util.rem(800px)) {
     width: 100%;
     margin-right: 0;

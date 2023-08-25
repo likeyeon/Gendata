@@ -1,4 +1,5 @@
 import ContactTitle from "./components/ContactTitle";
+import TextWidget from "./components/TextWidget";
 import Form from "./components/Form";
 import styles from "./Contact.module.scss";
 import Inside from "../../components/inside/Inside";
@@ -19,6 +20,7 @@ const Contact = () => {
       <div className={styles.section1}>
         <main className={styles.main}>
           <Inside>
+            <TextWidget />
             <Form>
               <PrivacyPolicyCheck
                 modal={modal}

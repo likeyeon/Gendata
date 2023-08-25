@@ -1,6 +1,6 @@
 import styles from "./Label.module.scss";
 
-const Label = ({ name, text }) => {
+const Label = ({ name = "", text = "" }) => {
   return (
     <>
       <label htmlFor={name} className={styles.label}>
