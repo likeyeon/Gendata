@@ -1,0 +1,42 @@
+@use "../../../style/util";
+
+.aiDevlopmentCase {
+  width: 100%;
+  height: util.rem(840px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    height: util.rem(1458px);
+
+  }
+
+}
+
+.aiDevlopmentCaseTitle {
+  width: 100%;
+  padding-bottom: util.rem(30px);
+}
+
+.aiDevlopmentCaseContainer {
+  width: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media (max-width: 992px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.aiDevlopmentCaseImages {
+  width: auto;
+  height: util.rem(278px);
+  padding: util.rem(15px);
+  margin: util.rem(30px) 0;
+}
