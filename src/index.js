@@ -7,6 +7,7 @@ import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import App from "./App";
+import ServiceLabeling from "./pages/service-labeling/ServiceLabeling";
 import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
   //   path: "/data-dealing",
   //   element: <App component={< />} />,
   // },
+  {
+    path: "/gendata-service-labeling",
+    element: <ServiceLabeling/>
+  },
   {
     path: "/ai-development",
     element: <App component={<AiDevelopment />} />,
