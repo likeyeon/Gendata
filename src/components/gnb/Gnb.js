@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import styles from "./Gnb.module.scss";
 import logo_dark from "../../assets/gnb/logo_dark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -34,10 +34,18 @@ const Gnb = () => {
   const dataDegrees = isDataFolded ? 0 : 180;
   const eduDegrees = isEduFolded ? 0 : 180;
 
-  const mobileMql = window.matchMedia("(max-width: 991px)");
-  mobileMql.onchange = (event) => {
+  const mqHandler = useCallback((event) => {
     !event.matches && setIsOpen(false);
-  };
+  }, []);
+
+  useEffect(() => {
+    const mobileMql = window.matchMedia("(max-width: 991px)");
+    mobileMql.addEventListener("change", mqHandler);
+
+    return () => {
+      mobileMql.removeEventListener("change", mqHandler);
+    };
+  }, [mqHandler]);
 
   return (
     <header className={styles.header}>
@@ -191,7 +199,7 @@ const Gnb = () => {
                 </a>
               </li>
               <li className={styles.depth_01}>
-                <div onClick={handleServiceClick}>
+                <a href="#!" onClick={handleServiceClick}>
                   <span>서비스</span>
                   <span className={styles.icon_chervron}>
                     <FontAwesomeIcon
@@ -199,11 +207,11 @@ const Gnb = () => {
                       rotation={serviceDegrees}
                     />
                   </span>
-                </div>
+                </a>
 
                 <ul className={isServiceFolded ? styles.folded : styles.spread}>
                   <li className={styles.depth_02}>
-                    <div onClick={handleDataClick}>
+                    <a href="#!" onClick={handleDataClick}>
                       <span>데이터 구축</span>
                       <span className={styles.icon_chervron}>
                         <FontAwesomeIcon
@@ -211,7 +219,7 @@ const Gnb = () => {
                           rotation={dataDegrees}
                         />
                       </span>
-                    </div>
+                    </a>
 
                     <ul
                       className={isDataFolded ? styles.folded : styles.spread}
