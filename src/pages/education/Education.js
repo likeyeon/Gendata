@@ -1,11 +1,9 @@
-import Gnb from "../../components/gnb/Gnb";
+import EducitionTitle from "./components/educationTitle/EducationTitle";
 
 export default function Education() {
   return (
     <>
-      <Gnb />
-      <br />
-      Education; Education; Education;
+      <EducitionTitle />
     </>
   );
 }
