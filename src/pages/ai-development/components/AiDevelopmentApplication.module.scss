@@ -1,78 +1,90 @@
 @use "../../../style/util";
 
 .applicationBackground {
-    background-image: linear-gradient(to bottom, #f5f5f6, white);
-    height: util.rem(1141px);
+  background-image: linear-gradient(to bottom, #f5f5f6, white);
+  height: util.rem(1141px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: util.rem(992px)) {
+    margin: util.rem(100px) util.rem(15px);
+    height: util.rem(1116px);
+
+  }
+}
+
+.applicationText {
+  @media (min-width: 993px) {
+    padding-bottom: util.rem(20px);
+    ;
+    margin-top: util.rem(76px);
+    ;
+  }
+
+}
+
+.applicationContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  position: relative;
+  top: util.rem(25px);
+  ;
+
+  @media (max-width: util.rem(992px)) {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 992px){
-      margin: util.rem(100px) util.rem(15px);
-      height: util.rem(1116px);
-
-    }
   }
-  
-  .applicationText{
-    @media (min-width: 993px){
-      padding-bottom: util.rem(20px); ;    
-    margin-top: util.rem(76px); ; 
-    }
-    
-  }
-  .applicationContainer {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+}
 
+.applicationItems {
+  justify-self: center;
+  width: auto;
+  height: util.rem(167px);
+  margin: util.rem(18px) 0 util.rem(18px) 0;
+
+  @media (max-width: util.rem(992px)) {
+    max-width: 100%;
+    width: util.rem(307px);
+    height: util.rem(112px);
+    padding: util.rem(15px) 0;
+  }
+}
+
+.character {
+  width: auto;
+  height: util.rem(249px);
+  padding-top: util.rem(45px);
+
+  @media (min-width: 993px) {
     position: relative;
-    top: util.rem(25px); ; 
+    left: util.rem(25px);
+    bottom: util.rem(95px);
+    height: util.rem(307px);
+    padding: 0;
+  }
+}
 
-    @media (max-width: 992px){
-      display: flex;
-      flex-direction: column;
-    }
-  }  
-  .applicationItems {
-    justify-self: center;
-    width: auto;
-    height: util.rem(167px);
-    margin: util.rem(18px) 0 util.rem(18px) 0;
-    @media (max-width: 992px){
-      max-width: 100%;
-      width: util.rem(307px);
-      height: util.rem(112px);
-      padding:  util.rem(15px) 0;
-    }
-  }
-  .character{
-    width: auto;
-    height: util.rem(249px);
-    padding-top:util.rem(45px);
-    @media (min-width: 993px){
-      position: relative;
-      left: util.rem(25px);
-      bottom: util.rem(95px);
-      height: util.rem(307px);
-      padding: 0;
-    }
-  }
-  .hideImg {
-    @media (max-width: 992px){
-      display: none;
-    }
-  }
-  .hiddenText {
+.hideImg {
+  @media (max-width: util.rem(992px)) {
     display: none;
-    @media (max-width: 992px){
-      display: block;
-      padding: util.rem(45px) 0;
-      color: #555555;
-      font-size: util.rem(16px) !important;
-      font-weight: 500;
-    }
   }
+}
+
+.hiddenText {
+  display: none;
+
+  @media (max-width: util.rem(992px)) {
+    display: block;
+    padding: util.rem(45px) 0;
+    color: #555555;
+    font-size: util.rem(16px) !important;
+    font-weight: 500;
+  }
+}
