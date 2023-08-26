@@ -14,3 +14,11 @@
 #root {
   width: 100vw;
 }
+
+.content {
+  padding-top: util.rem(116px);
+
+  @media screen and (max-width: util.rem(991px)) {
+    padding-top: util.rem(84.5px);
+  }
+}

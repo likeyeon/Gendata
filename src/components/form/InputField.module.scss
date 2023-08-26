@@ -1,0 +1,31 @@
+@use "../.././style/colors";
+@use "../.././style/util";
+
+.input {
+  width: 100%;
+  font-size: util.rem(15px);
+  border: none !important;
+  border-bottom: 1px solid #e6e6e6 !important;
+  padding: util.rem(10px) 0;
+  height: auto;
+  font: inherit;
+
+  &:focus {
+    outline: none;
+    border-bottom: 2px solid #16357b !important;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
+      -webkit-box-shadow ease-in-out 0.15s;
+  }
+}
+
+.group {
+  width: 50% !important;
+  padding: util.rem(40px) util.rem(50px) !important;
+  margin-bottom: util.rem(15px);
+
+  @media (max-width: 800px) {
+    padding: util.rem(40px) util.rem(50px) !important;
+    margin-bottom: util.rem(15px);
+    width: 100% !important;
+  }
+}

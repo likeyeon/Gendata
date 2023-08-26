@@ -1,0 +1,46 @@
+@use "../../../../style/util";
+
+.educationSystemContainer {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: util.rem(736px);
+  padding: 0 util.rem(15px);
+
+  @media (max-width: 992px) {
+    height: util.rem(515px);
+  }
+}
+
+.educationSystemContentsContainer {
+  display: flex;
+  flex-direction: column;
+  padding: util.rem(18px) 0 util.rem(80px);
+
+}
+
+.educationSystemTitle {}
+
+.educationSystemContents {
+  font-size: util.rem(16px);
+  padding: 0 util.rem(15px);
+  color: #363636;
+
+  @media (max-width: 992px) {
+    font-size: util.rem(14px);
+    line-height: 2;
+  }
+}
+
+.educationSystemImg {
+  width: util.rem(1250px);
+  height: auto;
+  padding: util.rem(15px) 0 util.rem(15px);
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
