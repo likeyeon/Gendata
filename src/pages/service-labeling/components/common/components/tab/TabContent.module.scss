@@ -2,8 +2,10 @@
 @use "../../../../../../style/colors";
 
 .TabContentWrap {
+  min-height: util.rem(493px);
+
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1.5fr 1fr;
   grid-template-areas: 
     "TabContentTitle TabContentImgWrap"
     "TabContentDesc TabContentImgWrap"
@@ -17,19 +19,12 @@
       color: colors.$black_c01};
   > .TabContentDesc{
       grid-area: TabContentDesc;
-      color: #535353;
+      color: colors.$black_c03;
       font-size: util.rem(18px);
       line-height: 2;
       margin-bottom: util.rem(3px)};
   > .TabBtn{
       grid-area: TabBtn;
-      background-color: #3568DB;
-      color: #fff;
-      font-size: util.rem(17px);
-      font-weight: 600;
-      padding: util.rem(16px) util.rem(30px);
-      border-radius: 15px;
-      border: 0 none
     };
   > .TabContentImgWrap{grid-area: TabContentImgWrap; width: util.rem(265px)};
 
