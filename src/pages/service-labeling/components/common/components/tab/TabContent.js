@@ -19,6 +19,7 @@ const TabContent = ({contentsData}) => {
       <h3 className={styles.TabContentTitle}>{title}</h3>
       <p className={styles.TabContentDesc}>{desc}</p>
       <HoverButton buttonData={data}/>
+      <button className={styles.TabBtn}>자세히 보기 →</button> 
       <div className={styles.TabContentImgWrap}>
         <img src={img} alt=""/>
       </div>           
