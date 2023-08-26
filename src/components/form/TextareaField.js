@@ -3,7 +3,7 @@ import { useState, useCallback } from "react";
 import Label from "./Label";
 import styles from "./TextareaField.module.scss";
 
-const TextareaField = ({ name, label }) => {
+const TextareaField = ({ name, label, width }) => {
   const [_value, _setValue] = useState("");
 
   const onChangeValue = useCallback((e) => {
@@ -12,7 +12,7 @@ const TextareaField = ({ name, label }) => {
   }, []);
 
   return (
-    <div className={styles.group}>
+    <div className={width ? styles.group_full : styles.group}>
       <Label name={name} text={label} />
       <textarea
         className={styles.textarea}

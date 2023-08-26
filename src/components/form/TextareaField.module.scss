@@ -3,7 +3,7 @@
 
 .textarea {
   width: 100%;
-  height: util.rem(200px) !important;
+  height: util.rem(200px);
   font-size: util.rem(15px);
   border: 1px solid #e6e6e6;
   padding: util.rem(6px) util.rem(12px);
@@ -12,20 +12,26 @@
 
   &:focus {
     outline: none;
-    border: 2px solid #16357b !important;
+    border: 2px solid #16357b;
     transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s,
       -webkit-box-shadow ease-in-out 0.15s;
   }
 }
 
 .group {
-  width: 50% !important;
-  padding: util.rem(40px) util.rem(50px) !important;
+  width: 50%;
+  padding: util.rem(40px) util.rem(50px);
   margin-bottom: util.rem(15px);
 
-  @media (max-width: 800px) {
-    padding: util.rem(40px) util.rem(50px) !important;
+  &_full {
+    padding: util.rem(40px) util.rem(50px);
     margin-bottom: util.rem(15px);
-    width: 100% !important;
+    width: 100%;
+  }
+
+  @media (max-width: 800px) {
+    padding: util.rem(40px) util.rem(50px);
+    margin-bottom: util.rem(15px);
+    width: 100%;
   }
 }

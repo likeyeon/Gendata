@@ -1,0 +1,40 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.banner,
+.banner_tablet {
+  display: flex;
+  justify-content: center;
+  padding: util.rem(40px) util.rem(15px);
+}
+
+img {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.banner > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .banner {
+    display: flex;
+  }
+
+  .banner_tablet {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    display: none;
+  }
+
+  .banner_tablet {
+    display: flex;
+    width: auto;
+    height: util.rem(180px);
+  }
+}
