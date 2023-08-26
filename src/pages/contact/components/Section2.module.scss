@@ -1,0 +1,16 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: util.rem(991px)) {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+.map {
+  height: util.rem(370px);
+  width: util.rem(550px);
+}
