@@ -1,0 +1,71 @@
+@use "../../../../../style/util";
+
+.NewsBoardTableContents {
+  display: grid;
+  grid-template-columns: util.rem(170px) auto 12%;
+  width: 100%;
+  border-bottom: util.rem(1px) solid #363636;
+
+  @media (max-width: util.rem(992px)) {
+    display: block;
+  }
+}
+
+.newsNumber,
+.newsTitle,
+.newsDate {
+  padding: util.rem(20px) util.rem(7px);
+  font-weight: 400;
+}
+
+.newsNumber,
+.newsDate {
+  font-size: util.rem(15px);
+  white-space: nowrap;
+}
+
+.newsNumber {
+  width: util.rem(170px);
+  font-size: util.rem(17px);
+}
+
+.newsTitle {
+  width: auto;
+  font-size: util.rem(17px);
+  text-align: left;
+
+  @media (max-width: util.rem(992px)) {
+    padding: util.rem(10px) util.rem(7px);
+  }
+}
+
+.newsDate {
+  width: 12%;
+}
+
+.NewsBoardTableContents {
+  font-size: util.rem(15px);
+  font-weight: 400;
+}
+
+.pagination {
+  padding: util.rem(39px) 0 util.rem(180px) 0;
+  margin: util.rem(20px) 0;
+}
+
+.mouseEvent {
+  margin: util.rem(3px);
+  line-height: util.rem(24px);
+  background: white;
+  border: none;
+  color: #363636;
+  font-size: util.rem(14px);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.hide {
+  @media (max-width: util.rem(992px)) {
+    display: none;
+  }
+}
