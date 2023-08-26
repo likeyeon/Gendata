@@ -52,6 +52,10 @@ const router = createBrowserRouter([
     element: <ServiceLabeling />,
   },
   {
+    path: "/gendata-service-labeling",
+    element: <ServiceLabeling/>
+  },
+  {
     path: "/ai-development",
     element: <App component={<AiDevelopment />} />,
   },

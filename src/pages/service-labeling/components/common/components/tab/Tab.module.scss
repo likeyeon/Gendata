@@ -2,13 +2,14 @@
 @use "../../../../../../style/colors";
 
 .TabOuterWrap {
-  background-color: #f5f5f5;
+  background-color: colors.$gray_b01;
   padding: util.rem(150px) 0;
 }
 .TabInnerWrap {
   width: util.rem(1280px);
   margin: 0 auto;
 }
+
 .TabTitle {
   font-size: util.rem(50px);
   font-weight: 700;
@@ -18,19 +19,24 @@
     color: colors.$blue_c01; 
   }
 }
+
 .TabMenu {
   display: flex;
   margin: util.rem(60px) 0;
-  font-weight: 700;
+  font-weight: 600;
   font-size: util.rem(18px);
+  color: colors.$black_c02;
 }
+
 .TabItem {
-  padding: util.rem(17px) util.rem(30px);
+  padding: util.rem(23px) util.rem(30px);
   border-radius: 50px;
 }
+
 .TabItem.Focused {
-  background-color: #E2E2E2;;
+  background-color: colors.$gray_b02;
 }
+
 .TabContentWrap {
   display: grid;
   grid-template-columns: 2fr 1fr;

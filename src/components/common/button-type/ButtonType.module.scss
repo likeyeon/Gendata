@@ -1,0 +1,30 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.Button {
+  background-color: colors.$blue_c02;
+  color: colors.$white_c01;
+  font-size: util.rem(17px);
+  font-weight: 600;
+  border-radius: 15px;
+}
+.HoverButtonWrap {
+  margin-top: util.rem(50px);
+}
+.HoverButton {
+  padding: util.rem(16px) util.rem(30px);
+}
+.HoverButton:hover {
+  color: inherit;
+}
+.CommonButtonWrap {
+  margin-top: util.rem(70px);
+}
+.CommonButton {
+  padding: util.rem(17px) util.rem(40px);
+  font-weight: 700;
+}
