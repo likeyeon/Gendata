@@ -1,0 +1,22 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+.wrapper {
+  display: flex;
+  margin-left: util.rem(80px);
+  font-size: util.rem(18px);
+  line-height: 3;
+
+  @media screen and (max-width: util.rem(800px)) {
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: util.rem(992px)) {
+    font-size: util.rem(15px);
+  }
+}
+
+.left {
+  margin-right: util.rem(31px);
+  color: rgb(108, 109, 111);
+}
