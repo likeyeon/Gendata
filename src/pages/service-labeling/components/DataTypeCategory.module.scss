@@ -8,6 +8,9 @@
   padding-top: util.rem(110px);
   padding-bottom: util.rem(110px);
 }
+.CategoryTitle {
+  display: none;
+}
 .CategoryList {
   display: flex;
   max-width: util.rem(1280px);
