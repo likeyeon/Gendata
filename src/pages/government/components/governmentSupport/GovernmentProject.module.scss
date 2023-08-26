@@ -1,0 +1,47 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.title_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: util.rem(60px) 0;
+}
+
+.project_wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: util.rem(30px);
+  padding: util.rem(30px) 0;
+}
+
+.project_item {
+  flex-grow: 1;
+}
+.project_item > img {
+  width: 100%;
+  box-shadow: 0 0 20px #d7d8da;
+  border-radius: 20px;
+}
+
+.project_title {
+  line-height: 1.2;
+  margin-bottom: util.rem(24px);
+}
+
+@media screen and (max-width: util.rem(991px)) {
+  .project_wrapper {
+    flex-direction: column;
+  }
+
+  .project_item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .project_item > img {
+    margin: 0 auto;
+    width: auto;
+    height: util.rem(508px);
+  }
+}

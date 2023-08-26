@@ -12,6 +12,7 @@ import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
 import Contact from "./pages/contact/Contact";
+import Government from "./pages/government/Government";
 
 const router = createBrowserRouter([
   {
@@ -37,11 +38,10 @@ const router = createBrowserRouter([
   //   path: "/inhouse-operation",
   //   element: <App component={< />} />,
   // },
-  /* 정부지원사업 */
-  // {
-  //   path: "/government-support-project",
-  //   element: <App component={< />} />,
-  // },
+  {
+    path: "/government-support-project",
+    element: <App component={<Government />} />,
+  },
   /* 데이터 거래 */
   // {
   //   path: "/data-dealing",
@@ -53,7 +53,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/gendata-service-labeling",
-    element: <ServiceLabeling/>
+    element: <ServiceLabeling />,
   },
   {
     path: "/ai-development",
