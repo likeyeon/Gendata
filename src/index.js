@@ -10,6 +10,7 @@ import ServiceLabeling from "./pages/service-labeling/ServiceLabeling";
 import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
+import Contact from "./pages/contact/Contact";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/education",
     element: <Education />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
 ]);
 

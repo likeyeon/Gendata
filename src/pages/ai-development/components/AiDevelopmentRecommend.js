@@ -1,7 +1,7 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 
 import styles from "./AiDevelopmentRecommend.module.scss";
-import { Subtitle, Contents } from "../../../components/common/typo/Typo";
+import { Subtitle } from "../../../components/common/typo/Typo";
 
 import card5 from "../../../assets/ai-development/card5.png";
 import card6 from "../../../assets/ai-development/card6.png";
@@ -9,43 +9,53 @@ import files from "../../../assets/ai-development/files.png";
 
 const AiDevelopmentRecommend = () => {
   const [contentsString, setTitleString] = useState("");
-  const maxWidthTitle = (
-    <>
-      우리 회사에 적합한 AI 기술과 모델,
-      <br />
-      젠데이터에서 추천받으세요.
-    </>
-  );
-  const minWidthTitle = (
-    <>
-      우리 회사에 적합한 AI 기술과
-      <br />
-      모델, 젠데이터에서 추천받으세요.
-    </>
+
+  const maxWidthTitle = useMemo(
+    () => (
+      <>
+        우리 회사에 적합한 AI 기술과 모델,
+        <br />
+        젠데이터에서 추천받으세요.
+      </>
+    ),
+    []
   );
 
-  const tabletMql = window.matchMedia("screen and (min-width:992px)");
-  const changeEventHandler = useCallback(
-    (e) => {
+  const minWidthTitle = useMemo(
+    () => (
+      <>
+        우리 회사에 적합한 AI 기술과
+        <br />
+        모델, 젠데이터에서 추천받으세요.
+      </>
+    ),
+    []
+  );
+
+  useEffect(() => {
+    const tabletMql = window.matchMedia("screen and (min-width:992px)");
+
+    const changeEventHandler = (e) => {
       if (e.matches) {
         setTitleString(maxWidthTitle);
       } else {
         setTitleString(minWidthTitle);
       }
-    },
-    [maxWidthTitle, minWidthTitle]
-  );
-  tabletMql.addEventListener("change", changeEventHandler);
+    };
 
-  useEffect(() => {
-    if (window.innerWidth > 992) {
+    // 초기 화면 크기를 체크하여 contentsString을 설정합니다.
+    if (tabletMql.matches) {
       setTitleString(maxWidthTitle);
+    } else {
+      setTitleString(minWidthTitle);
     }
+
+    tabletMql.addEventListener("change", changeEventHandler);
 
     return () => {
       tabletMql.removeEventListener("change", changeEventHandler);
     };
-  }, []);
+  }, [maxWidthTitle, minWidthTitle]);
 
   return (
     <div className={styles.recommendBackground}>

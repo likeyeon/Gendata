@@ -1,0 +1,7 @@
+@use "../../style/util";
+
+.inside {
+  max-width: 1280px;
+  padding: 0px util.rem(15px);
+  margin: 0 auto;
+}
