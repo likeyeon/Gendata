@@ -11,6 +11,7 @@ import ServiceLabeling from "./pages/service-labeling/ServiceLabeling";
 import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
+import News from "./pages/news/News";
 import Contact from "./pages/contact/Contact";
 
 const router = createBrowserRouter([
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/gendata-service-labeling",
-    element: <ServiceLabeling/>
+    element: <ServiceLabeling />,
   },
   {
     path: "/ai-development",
@@ -78,6 +79,10 @@ const router = createBrowserRouter([
   //   path: "/news",
   //   element: <App component={< />} />,
   // },
+  {
+    path: "/news",
+    element: <App component={<News />} />,
+  },
   {
     path: "/contact",
     element: <App component={<Contact />} />,
