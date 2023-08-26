@@ -1,0 +1,33 @@
+@use "../.././style/colors";
+@use "../.././style/util";
+
+.select {
+  width: 100%;
+  font-size: util.rem(15px);
+  border: none !important;
+  border-bottom: 1px solid #e6e6e6 !important;
+  padding: util.rem(10px) 0;
+  height: auto;
+  padding-right: util.rem(5px) !important;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+option {
+  position: absolute;
+  top: 0;
+}
+
+.group {
+  width: 50% !important;
+  padding: util.rem(40px) util.rem(50px) !important;
+  margin-bottom: util.rem(15px);
+
+  @media (max-width: 800px) {
+    padding: util.rem(40px) util.rem(50px) !important;
+    margin-bottom: util.rem(15px);
+    width: 100% !important;
+  }
+}

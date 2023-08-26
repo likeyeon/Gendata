@@ -1,11 +1,17 @@
-import Gnb from "../../components/gnb/Gnb";
+import EducitionTitle from "./components/educationTitle/EducationTitle";
+import EducationIntro from "./components/educationIntro/EducationIntro";
+import EducationSystem from "./components/educationSystem/EducationSystem";
+import EducationReview from "./components/educationReview/EducationReview";
+import Contact from "./components/Contact";
 
 export default function Education() {
   return (
     <>
-      <Gnb />
-      <br />
-      Education; Education; Education;
+      <EducitionTitle />
+      <EducationIntro />
+      <EducationSystem />
+      <EducationReview />
+      <Contact />
     </>
   );
 }

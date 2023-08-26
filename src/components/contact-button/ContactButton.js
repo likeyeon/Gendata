@@ -23,7 +23,11 @@ const ContactButton = ({ maxTitle, minTitle, className }) => {
     if (window.innerWidth > 992) {
       setTitleString(maxWidthTitle);
     }
-
+    if (tabletMql.matches) {
+      setTitleString(maxWidthTitle);
+    } else {
+      setTitleString(minWidthTitle);
+    }
     return () => {
       tabletMql.removeEventListener("change", changeEventHandler);
     };
