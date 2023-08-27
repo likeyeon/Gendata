@@ -3,16 +3,36 @@ import styles from "./Content.module.scss";
 
 const Content = () => {
   return (
-    <main className={styles.content}>
+    <main className={styles.main}>
       <Inside>
-        <div className={styles.top_wrapper}>
-          <div className={styles.top}>
-            <p>누구에게나 열려있는 AI</p>
-            <p>AI 모델 개발 그리고 데이터 구축</p>
+        <div className={styles.content_wrap}>
+          <div className={styles.title}>
+            <p>
+              <strong>누구에게나 열려있는 AI</strong>
+            </p>
+            <p>
+              <strong>AI 모델 개발</strong> 그리고 <strong>데이터 구축</strong>
+            </p>
           </div>
-        </div>
-        <div className={styles.bottom_wrapper}>
-          <div className={styles.bottom}></div>
+          <div className={styles.data_table}>
+            <hr />
+            <div className={styles.center_wrap}>
+              <div className={styles.data_text_wrap}>
+                <div className={styles.data_wrap}>
+                  <p>100건+</p>
+                  <span>데이터 가공</span>
+                </div>
+                <div className={styles.data_wrap}>
+                  <p>50건+</p>
+                  <span>AI 응용 소프트웨어 개발</span>
+                </div>
+                <div className={styles.data_wrap}>
+                  <p>100건+</p>
+                  <span>품질 검증</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </Inside>
     </main>

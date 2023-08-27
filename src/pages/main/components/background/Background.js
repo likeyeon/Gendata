@@ -4,10 +4,10 @@ import Content from "./Content";
 
 const Background = () => {
   return (
-    <>
+    <div className={styles.section}>
       <Iframe />
       <Content />
-    </>
+    </div>
   );
 };
 
