@@ -1,0 +1,41 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+.main {
+  padding-top: util.rem(60px);
+  padding-bottom: util.rem(140px);
+}
+
+.banner_wrapper {
+  background-color: #001cbb;
+  border-radius: 20px;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  padding: util.rem(90px);
+  font-size: util.rem(35px);
+
+  & > p {
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+  }
+
+  & > img {
+    width: util.rem(220px);
+    height: util.rem(288px);
+    margin-top: util.rem(-190px);
+  }
+
+  @media screen and (max-width: util.rem(991px)) {
+    flex-direction: column-reverse;
+    font-size: util.rem(18px);
+    padding: util.rem(30px);
+
+    & > p {
+      text-align: center;
+      margin-top: util.rem(24px);
+    }
+  }
+}

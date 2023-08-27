@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useMemo } from "react";
 import styles from "./Title.module.scss";
 import { TitleBig, Contents } from "../common/typo/Typo";
 
@@ -11,6 +11,8 @@ const Title = ({
 }) => {
   const [contentsString, setContentsString] = useState("");
   const titleText = <>{title}</>;
+  // const maxWidthContents = useMemo(() => <>{maxContents}</>, [maxContents]);
+  // const minWidthContents = useMemo(() => <>{minContents}</>, [minContents]);
   const maxWidthContents = <>{maxContents}</>;
   const minWidthContents = <>{minContents}</>;
 
