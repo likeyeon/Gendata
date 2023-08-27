@@ -16,10 +16,11 @@
   font-weight: 700;
   width: util.rem(290px);
   margin: util.rem(15px) 0;
+  color: colors.$black_c01;
 }
 .CategoryList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 33.333%);
   row-gap: util.rem(60px); 
   justify-items: center;
 }
@@ -49,16 +50,21 @@
 @media screen and (max-width:util.rem(991px)) {
   .CategoryInnerWrap {
     flex-direction: column;
-    padding: util.rem(70px) 0 util.rem(60px);
+    padding: util.rem(65px) 0 util.rem(45px);
   }
   .CategoryTitle {
     text-align: center;
     margin: 0 auto;
     font-size: util.rem(30px);
-    margin-bottom: util.rem(60px);
+    margin-bottom: util.rem(65px);
+  }
+  .CategoryList {
+    row-gap: 0;
   }
   .CategoryItem {
-    width: util.rem(90px);
+    width: util.rem(95px);
+    margin-top: 0;
+    margin-bottom: 0;
 
     span {
       font-size: util.rem(15px);

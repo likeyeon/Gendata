@@ -6,12 +6,11 @@ import DataTypeCategory from "./components/DataTypeCategory";
 import DataProcessImageTitle from "./components/DataProcessImageTitle";
 import DataProcessImageDataSet from "./components/DataProcessImageDataSet";
 
-import styles from "./ServiceLabeling.module.scss";
 import MainTab from "./components/common/MainTab";
 
 export default function ServiceLabeling() {
   return (
-    <div className={styles.Container}>
+    <div>
       <Gnb />
       <div>
         <ServiceLabelingMainTitle />

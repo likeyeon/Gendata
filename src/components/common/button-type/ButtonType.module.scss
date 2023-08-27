@@ -28,3 +28,13 @@ a {
   padding: util.rem(17px) util.rem(40px);
   font-weight: 700;
 }
+
+@media screen and (max-width:util.rem(991px)) {
+  .HoverButtonWrap {
+    text-align: center;
+  }
+  .HoverButton {
+    padding: util.rem(13px) util.rem(30px);
+    font-size: util.rem(14px);
+  }
+}
