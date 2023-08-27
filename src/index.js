@@ -13,6 +13,7 @@ import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
 import Contact from "./pages/contact/Contact";
 import Government from "./pages/government/Government";
+import DataDealing from "./pages/data-dealing/DataDealing";
 
 const router = createBrowserRouter([
   {
@@ -42,14 +43,9 @@ const router = createBrowserRouter([
     path: "/government-support-project",
     element: <App component={<Government />} />,
   },
-  /* 데이터 거래 */
-  // {
-  //   path: "/data-dealing",
-  //   element: <App component={< />} />,
-  // },
   {
-    path: "/gendata-service-labeling",
-    element: <ServiceLabeling />,
+    path: "/data-dealing",
+    element: <App component={<DataDealing />} />,
   },
   {
     path: "/gendata-service-labeling",
