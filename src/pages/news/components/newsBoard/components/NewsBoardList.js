@@ -35,12 +35,9 @@ const NewsBoardList = () => {
   const totalPages = Math.ceil(boardList.length / itemsPerPage);
 
   return (
-    <>
+    <div className={styles.newsBoard}>
       {getCurrentPageData().map((board) => (
-        <div
-          key={board.id}
-          className={`${styles.NewsBoardTableContents} ${styles.tableContents}`}
-        >
+        <div key={board.id} className={styles.NewsBoardTableContents}>
           <div className={`${styles.newsNumber} ${styles.hide}`}>
             {board.id}
           </div>
@@ -53,9 +50,7 @@ const NewsBoardList = () => {
         </div>
       ))}
       <div className={styles.pagination}>
-        <button className={` ${styles.mouseEvent} ${styles.leftBtutton}`}>
-          &lt;
-        </button>
+        <button className={styles.mouseEvent}>&lt;</button>
         {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
@@ -67,11 +62,9 @@ const NewsBoardList = () => {
             {index + 1}
           </button>
         ))}
-        <button className={`${styles.mouseEvent} ${styles.rightButton}`}>
-          &gt;
-        </button>
+        <button className={styles.mouseEvent}>&gt;</button>
       </div>
-    </>
+    </div>
   );
 };
 export default NewsBoardList;

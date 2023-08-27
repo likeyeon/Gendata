@@ -1,6 +1,8 @@
 @use "../../../../style/util";
 
 .newsBoardContainer {
+  width: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -10,12 +12,15 @@
 .newsBoard {
   align-items: center;
   text-align: center;
-  width: util.rem(1100px);
-  height: util.rem(1066px);
+  max-width: util.rem(1100px);
+  width: 100%;
+  height: fit-content;
   border-top: util.rem(3px) solid #707070;
+  margin: 0 util.rem(7.5px);
 
   @media (max-width: util.rem(992px)) {
-    width: 95vw;
+    margin: 0 util.rem(7px);
+
   }
 }
 
@@ -54,6 +59,7 @@
 }
 
 .newsDate {
+  text-align: center;
   width: 12%;
 }
 
@@ -62,10 +68,7 @@
   font-weight: 700;
 }
 
-.NewsBoardTableContents {
-  font-size: util.rem(15px);
-  font-weight: 400;
-}
+
 
 .hide {
   @media (max-width: util.rem(992px)) {

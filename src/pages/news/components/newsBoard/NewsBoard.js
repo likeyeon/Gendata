@@ -11,11 +11,8 @@ const NewsBoard = () => {
             작성시간
           </div>
         </div>
-        <div
-          className={`${styles.NewsBoardTableContents} ${styles.tableContents}`}
-        >
-          <NewsBoardList />
-        </div>
+
+        <NewsBoardList />
       </div>
     </div>
   );
