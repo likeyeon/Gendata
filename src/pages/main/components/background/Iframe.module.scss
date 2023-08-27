@@ -1,0 +1,25 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.iframe_section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.iframe_wrapper {
+  width: 100vw;
+  position: relative;
+}
+
+.iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
