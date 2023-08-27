@@ -13,7 +13,7 @@ import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
 import News from "./pages/news/News";
 import Contact from "./pages/contact/Contact";
-import NewsContents from "./pages/news/components/newsContents/NewsContents"; //
+import NewsContents from "./pages/newsContents/NewsContents.js"; //
 
 const router = createBrowserRouter([
   {
