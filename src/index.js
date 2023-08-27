@@ -13,6 +13,7 @@ import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
 import News from "./pages/news/News";
 import Contact from "./pages/contact/Contact";
+import NewsContents from "./pages/news/components/newsContents/NewsContents"; //
 
 const router = createBrowserRouter([
   {
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
   {
     path: "/news",
     element: <App component={<News />} />,
+  },
+  {
+    path: "/news/:newsId",
+    element: <App component={<NewsContents />} />,
   },
   {
     path: "/contact",
