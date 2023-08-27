@@ -8,6 +8,10 @@ import { RouterProvider } from "react-router-dom";
 import Home from "./pages/home/Home";
 import App from "./App";
 import ServiceLabeling from "./pages/service-labeling/ServiceLabeling";
+import DataProcess3d from "./pages/service-labeling/DataProcess3d";
+import DataProcessText from "./pages/service-labeling/DataProcessText";
+import DataProcessVideo from "./pages/service-labeling/DataProcessVideo";
+import DataProcessAudio from "./pages/service-labeling/DataProcessAudio";
 import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
@@ -49,7 +53,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/gendata-service-labeling",
-    element: <ServiceLabeling />,
+    element: <App component={<ServiceLabeling />} />,
   },
   {
     path: "/ai-development",
@@ -77,6 +81,24 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <App component={<Contact />} />,
+  },
+
+  // 데이터 가공 > AI 데이터 가공
+  {
+    path: "/data-process-3d",
+    element: <App component={<DataProcess3d />} />,
+  },
+  {
+    path: "/data-process-text",
+    element: <App component={<DataProcessText />} />,
+  },
+  {
+    path: "/data-process-video",
+    element: <App component={<DataProcessVideo />} />,
+  },
+  {
+    path: "/data-process-audio",
+    element: <App component={<DataProcessAudio />} />,
   },
 ]);
 

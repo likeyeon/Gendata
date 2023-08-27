@@ -1,6 +1,6 @@
-import TabContent from "./components/tab/TabContent";
+import TabContent from "../common/tab-module/TabContent";
 
-import TabContentImg1 from "../../../../assets/data-building/main_tab1.png";
+import TabContentImg1 from "../../assets/data-building/main_tab1.png";
 
 const MainTabContent1 = () => {
   const data = {
