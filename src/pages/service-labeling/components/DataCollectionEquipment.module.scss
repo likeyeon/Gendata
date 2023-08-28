@@ -1,0 +1,67 @@
+@use "../../../style/util";
+@use "../../../style/colors";
+
+.EquipmentInnerWrap {
+  max-width: util.rem(1280px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: util.rem(130px) util.rem(15px);
+}
+.EquipmentTitle {
+  font-weight: 700;
+  font-size: util.rem(33px);
+  line-height: 1.5;
+}
+.EquipmentList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: util.rem(50px);
+}
+.EquipmentItem {
+  width: util.rem(167px);
+
+  > span {
+    font-size: util.rem(18px);
+    font-weight: 600;
+    color: colors.$black_c03;
+    display: block;
+    text-align: center;
+    margin-top: util.rem(30px);
+  }
+}
+.EquipmentItem img {
+  max-width: 100%;
+}
+
+@media screen and (max-width:util.rem(991px)) {
+  .EquipmentInnerWrap {
+    flex-direction: column;
+    padding-top: util.rem(90px);
+    padding-bottom: util.rem(90px);
+  }
+  .EquipmentTitle {
+    font-size: util.rem(30px);
+    text-align: center;
+    line-height: 1.2;
+  }
+  .EquipmentList {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: util.rem(10px);
+    justify-items: center;
+    margin-top: util.rem(60px);
+  }  
+  .EquipmentItem {
+    width: util.rem(90px);
+
+    > span {
+      font-size: util.rem(15px);
+      margin-left: util.rem(-15px);
+      margin-right: util.rem(-15px);
+      margin-top: util.rem(25px);
+    }
+  }
+  .EquipmentItem:last-child {
+    display: none;
+  }
+}

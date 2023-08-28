@@ -1,0 +1,82 @@
+@use "../../../../../style/util";
+@use "../../../../../style/colors";
+
+.DataSetWrap {
+  background-color: colors.$gray_b04;
+  padding: util.rem(70px) util.rem(170px);
+  border-radius: 10px;
+  max-width: util.rem(1250px);
+  margin: 0 auto util.rem(150px);
+}
+.DataSetTitle {
+  color: colors.$black_c01;
+  font-weight: 600;
+  font-size: util.rem(45px);
+  text-align: center;
+  margin-bottom: util.rem(60px);
+}
+.DataSetContents {
+  width: 100%;
+}
+.DataSetTabMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: util.rem(17px);
+  background-color: colors.$black_c01;
+}
+.TabItem {
+  color: colors.$black_c02;
+  font-size: util.rem(18px);
+  font-weight: 600;
+  margin: util.rem(5px) util.rem(20px);
+  cursor: pointer;
+}
+.TabItem.Focused {
+  color: colors.$white_c01;
+}
+.DataSetTabContentWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: colors.$gray_b01;
+  padding: util.rem(45px) 0 util.rem(40px);
+}
+.DataSetTabDesc {
+  font-size: util.rem(18px);
+  margin-bottom: util.rem(20px);
+}
+.DataSetTabContent {
+  width: util.rem(545px);
+  height: fit-content;
+  text-align: center;
+}
+.DataSetTabContent img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+@media screen and (max-width:util.rem(991px)) {
+  .DataSetWrap {
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .DataSetTitle {
+    display: none;
+  }
+  .TabItem {
+    font-size: util.rem(16px);
+  }
+  .DataSetTabContentWrap {
+    background-color: colors.$gray_b04;
+  }
+  .DataSetTabDesc {
+    font-size: util.rem(14px);
+  }
+  .DataSetTabContent {
+    width: util.rem(334px);
+    height: fit-content;
+    flex: none;
+  }
+}

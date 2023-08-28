@@ -5,20 +5,28 @@ import "./style/style.scss";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Main from "./pages/main/Main";
 import App from "./App";
 import ServiceLabeling from "./pages/service-labeling/ServiceLabeling";
+import DataProcess3d from "./pages/service-labeling/DataProcess3d";
+import DataProcessText from "./pages/service-labeling/DataProcessText";
+import DataProcessVideo from "./pages/service-labeling/DataProcessVideo";
+import DataProcessAudio from "./pages/service-labeling/DataProcessAudio";
+import DataCollection from "./pages/service-labeling/DataCollection";
+import InHouseOperation from "./pages/service-labeling/InHouseOperation";
 import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
 import News from "./pages/news/News";
 import Contact from "./pages/contact/Contact";
 import NewsContents from "./pages/newsContents/NewsContents.js"; //
+import Government from "./pages/government/Government";
+import DataDealing from "./pages/data-dealing/DataDealing";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App component={<Home />} />,
+    element: <App component={<Main />} />,
   },
   {
     path: "/introduce",
@@ -39,23 +47,25 @@ const router = createBrowserRouter([
   //   path: "/inhouse-operation",
   //   element: <App component={< />} />,
   // },
-  /* 정부지원사업 */
-  // {
-  //   path: "/government-support-project",
-  //   element: <App component={< />} />,
-  // },
-  /* 데이터 거래 */
-  // {
-  //   path: "/data-dealing",
-  //   element: <App component={< />} />,
-  // },
   {
-    path: "/gendata-service-labeling",
-    element: <ServiceLabeling />,
+    path: "/government-support-project",
+    element: <App component={<Government />} />,
+  },
+  {
+    path: "/data-dealing",
+    element: <App component={<DataDealing />} />,
   },
   {
     path: "/gendata-service-labeling",
-    element: <ServiceLabeling />,
+    element: <App component={<ServiceLabeling />} />,
+  },
+  {
+    path: "/data-collection",
+    element: <App component={<DataCollection />} />,
+  },
+  {
+    path: "/inhouse-operation",
+    element: <App component={<InHouseOperation />} />,
   },
   {
     path: "/ai-development",
@@ -91,6 +101,24 @@ const router = createBrowserRouter([
   {
     path: "/contact",
     element: <App component={<Contact />} />,
+  },
+
+  // 데이터 가공 > AI 데이터 가공
+  {
+    path: "/data-process-3d",
+    element: <App component={<DataProcess3d />} />,
+  },
+  {
+    path: "/data-process-text",
+    element: <App component={<DataProcessText />} />,
+  },
+  {
+    path: "/data-process-video",
+    element: <App component={<DataProcessVideo />} />,
+  },
+  {
+    path: "/data-process-audio",
+    element: <App component={<DataProcessAudio />} />,
   },
 ]);
 

@@ -1,0 +1,10 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.img {
+  width: 100%;
+}
+
+.item {
+  width: util.rem(30px);
+}

@@ -3,9 +3,9 @@ import TextWidget from "./components/TextWidget";
 import Form from "./components/Form";
 import styles from "./Contact.module.scss";
 import Inside from "../../components/inside/Inside";
-import FormButton from "../../components/form/FormButton";
 import PrivacyPolicyCheck from "../../components/form/PrivacyPolicyCheck";
 import { useState } from "react";
+import Section2 from "./components/Section2";
 
 const Contact = () => {
   const [modal, openModal] = useState(false);
@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <div onClick={() => modal && openModal(false)}>
       <ContactTitle />
-      <div className={styles.section1}>
+      <section className={styles.section1}>
         <main className={styles.main}>
           <Inside>
             <TextWidget />
@@ -27,10 +27,14 @@ const Contact = () => {
                 handleOpenModal={handleOpenModal}
               />
             </Form>
-            <FormButton innerText={"문의 완료!"} />
           </Inside>
         </main>
-      </div>
+      </section>
+      <section className={styles.section2}>
+        <main className={styles.main}>
+          <Section2 />
+        </main>
+      </section>
     </div>
   );
 };

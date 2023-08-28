@@ -1,0 +1,16 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.contact_wrapper {
+  margin: util.rem(180px) 0;
+}
+
+.main {
+  width: 100%;
+}
+
+.contact_title {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: util.rem(70px);
+}

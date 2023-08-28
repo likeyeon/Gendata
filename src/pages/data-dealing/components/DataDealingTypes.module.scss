@@ -1,0 +1,57 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+@media screen and (min-width: 992px) {
+  .main {
+    background: linear-gradient(#f4f4f4, #fff);
+    padding: util.rem(180px) 0;
+  }
+}
+
+.title_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: util.rem(60px);
+}
+
+.img_wrapper {
+  height: util.rem(373px);
+  display: block;
+  text-align: center;
+  padding: util.rem(15px);
+
+  img {
+    width: 100%;
+  }
+
+  &_mobile {
+    display: none;
+    padding: util.rem(15px);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .main {
+    background-color: #f4f4f4;
+    padding: util.rem(120px) 0;
+  }
+
+  .img_wrapper {
+    display: none;
+    &_mobile {
+      height: util.rem(273px);
+      display: block;
+      text-align: center;
+
+      img {
+        height: util.rem(273px);
+        width: auto;
+      }
+    }
+  }
+
+  .title_wrapper {
+    margin-bottom: util.rem(10px);
+  }
+}

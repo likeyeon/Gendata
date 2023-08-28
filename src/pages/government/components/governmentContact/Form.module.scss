@@ -1,0 +1,46 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.form {
+  width: 100%;
+}
+
+.section {
+  width: 1000px;
+  text-align: left;
+  display: block;
+  margin: 0 auto;
+}
+
+.wrapper {
+  // margin: util.rem(4px) 0;
+  display: block;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-flow: wrap;
+  font-size: util.rem(15px);
+}
+
+@media screen and (max-width: util.rem(991px)) {
+  .form {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
+@media screen and (max-width: util.rem(800px)) {
+  .section {
+    width: 100%;
+    text-align: left;
+    display: block;
+    margin: 0 auto;
+  }
+  .group {
+    padding: util.rem(40px) util.rem(50px);
+    margin-bottom: util.rem(15px);
+    width: 100%;
+  }
+}
