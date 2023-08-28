@@ -1,0 +1,103 @@
+@use "../../../style/util";
+@use "../../../style/colors";
+
+.ManageOuterWrap {
+  background-color: colors.$gray_b05;
+  display: flex;
+  justify-content: center;
+}
+.ManageInnerWrap {
+  max-width: util.rem(1280px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: util.rem(120px) util.rem(15px)0 util.rem(180px);
+}
+.ManageBanner {
+  max-width: util.rem(1200px);
+
+  > img {
+    max-width: 100%;
+  }
+}
+.ManageTitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: util.rem(45px);
+  margin: util.rem(150px) 0 util.rem(80px);
+}
+.ManageList {
+  max-width: util.rem(1250px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ManageItem {
+  width: util.rem(200px);
+  margin: util.rem(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  font-size: util.rem(18px);
+
+  > h3 {
+    color: colors.$black_c06;
+    margin: util.rem(30px) 0;
+  }
+  > img {
+    max-width: 100%;
+  }
+}
+.ManageDesc {
+    align-self: flex-end;
+    background-color: colors.$gray_b06;
+    padding: util.rem(50px);
+    border-radius: 30px;
+    font-size: util.rem(15px);
+    line-height: 2;
+    margin-top: util.rem(95px);
+
+    > span {
+      display: block;
+    }
+}
+
+@media screen and (max-width: util.rem(991px)){
+  .ManageInnerWrap {
+    padding: util.rem(50px) 0 util.rem(100px);
+  }
+  .ManageBanner {
+    display: none;
+  }
+  .ManageTitle {
+    font-size: util.rem(30px);
+    margin-top: util.rem(50px);
+    margin-bottom: util.rem(40px);
+  }
+  .ManageList {
+    flex-direction: column;
+  }
+  .ManageItem {
+    width: util.rem(185px);
+    font-size: util.rem(15px);
+
+    > h3 {
+      color: colors.$black_c06;
+      margin: util.rem(20px) 0 util.rem(10px);
+    }
+  }
+  .ManageItem:not(:first-of-type){
+    margin-top: util.rem(50px);
+  }
+  .ManageDesc {
+      align-self: center;
+      padding: util.rem(20px);
+      border-radius: 30px;
+      font-size: util.rem(16px);
+      line-height: 1.6;
+      margin: util.rem(100px) util.rem(20px) 0;
+      color: colors.$black_c03;
+  }
+}
