@@ -1,7 +1,7 @@
 import styles from "./BuildingData.module.scss";
 import Inside from "../../../../components/inside/Inside";
 import Video from "./Video";
-import MainTab from "../../../service-labeling/components/common/MainTab";
+import MainTab from "../../../../components/tab/MainTab";
 
 const BuildingData = () => {
   return (
