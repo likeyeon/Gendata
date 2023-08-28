@@ -1,0 +1,142 @@
+@use "../../style/util";
+
+// .newsContent {
+
+//   width: 100%;
+//   margin: 0 auto;
+// }
+
+.contentsContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: 1250px;
+  width: 100%;
+  margin: util.rem(15px) auto; //
+  padding: 0 30px;
+
+  @media (max-width: util.rem(992px)) {
+    padding: 0 util.rem(15px);
+    margin: 0 auto;
+  }
+}
+
+.contentMain {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+
+}
+
+.contentsTitle {
+  width: 100%;
+  font-size: util.rem(20.5px);
+  font-weight: 400;
+  text-align: center;
+  color: rgb(54 54 54);
+  margin-bottom: util.rem(15px);
+
+  @media (max-width: util.rem(992px)) {
+    border-bottom: solid util.rem(1px) #e5e7eb;
+    padding: util.rem(7.5px) util.rem(30px) util.rem(15px) 0;
+  }
+}
+
+.date {
+  width: 100%;
+
+  font-size: util.rem(13px);
+  font-weight: 400;
+  border-bottom: solid util.rem(1px) #e5e7eb;
+  float: left;
+  padding: 8px 0 20px;
+  color: rgba(54, 54, 54, 0.7);
+
+  @media (max-width: util.rem(992px)) {
+    border: none;
+    padding: util.rem(15px) util.rem(15px) util.rem(15px) 0;
+  }
+}
+
+.contents {
+  width: 100%;
+
+  padding: 22px 0;
+  line-height: 24px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(54 54 54);
+
+  text-align: center;
+  border-bottom: solid util.rem(1px) #e5e7eb;
+
+}
+
+.pagenationContainer {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  margin: 0 auto;
+
+  @media (max-width: util.rem(992px)) {
+    padding: util.rem(15px) 0 util.rem(15px);
+  }
+}
+
+.pagenation {
+  width: 100%;
+  height: auto;
+  padding: util.rem(12px) util.rem(12px);
+  background-color: white;
+  border: none;
+  border-bottom: solid util.rem(1px) #e5e7eb;
+  text-align: left;
+  font-size: 14px;
+}
+
+.pagenation:hover {
+  background-color: rgba(192, 192, 192, 0.1);
+}
+
+.pagenationText {
+  padding-left: util.rem(30px);
+  font-size: util.rem(14px);
+  font-weight: 400;
+}
+
+.goNewsBordPage {
+  display: inline;
+  background-color: #363636;
+  color: #ffffff;
+  margin-top: util.rem(12px);
+  font-size: util.rem(12px);
+  font-weight: 400;
+  text-align: center;
+  padding: util.rem(9px) 0;
+  box-sizing: border-box;
+  width: util.rem(65.42px);
+  border-radius: util.rem(2px);
+}
+
+.goNewsBordPage:hover {
+  background-color: #ffffff;
+  border: #363636 solid util.rem(1px);
+  color: #363636;
+}
+
+.pagenationIconUP {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.pagenationIconDown {
+  display: inline-block;
+  transform: rotate(90deg);
+}
+
+.blank {
+  height: util.rem(174px);
+}
