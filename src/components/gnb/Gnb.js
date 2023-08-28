@@ -2,6 +2,7 @@ import { useState, useCallback, useEffect } from "react";
 import { useLocation } from "react-router";
 import styles from "./Gnb.module.scss";
 import logo_dark from "../../assets/gnb/logo_dark.png";
+import logo_white from "../../assets/gnb/logo_white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -74,8 +75,25 @@ const Gnb = () => {
     }
   }, []);
 
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = document.documentElement.scrollTop;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${
+        !scrollPosition && path === "/" ? styles.header_top : styles.header
+      }`}
+    >
       <nav className={styles.nav}>
         <div className={styles.nav_bar}>
           {isOpen ? <div className={styles.background_dark}></div> : ""}
@@ -83,7 +101,9 @@ const Gnb = () => {
             <a href="/">
               <img
                 className={styles.logo_dark}
-                src={logo_dark}
+                src={`${
+                  !scrollPosition && path === "/" ? logo_white : logo_dark
+                }`}
                 alt="logo"
               ></img>
             </a>

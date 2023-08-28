@@ -11,6 +11,20 @@
   z-index: 999;
 }
 
+.header_top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  z-index: 999;
+
+  .gnb_item_a {
+    color: white !important;
+  }
+}
+
 .background_dark {
   position: fixed;
   top: 0;
