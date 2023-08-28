@@ -17,7 +17,9 @@ import InHouseOperation from "./pages/service-labeling/InHouseOperation";
 import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
+import News from "./pages/news/News";
 import Contact from "./pages/contact/Contact";
+import NewsContents from "./pages/newsContents/NewsContents.js"; //
 import Government from "./pages/government/Government";
 import DataDealing from "./pages/data-dealing/DataDealing";
 
@@ -88,6 +90,14 @@ const router = createBrowserRouter([
   //   path: "/news",
   //   element: <App component={< />} />,
   // },
+  {
+    path: "/news",
+    element: <App component={<News />} />,
+  },
+  {
+    path: "/news/:newsId",
+    element: <App component={<NewsContents />} />,
+  },
   {
     path: "/contact",
     element: <App component={<Contact />} />,
