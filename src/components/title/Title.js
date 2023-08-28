@@ -1,55 +1,18 @@
-import React, { useState, useCallback, useEffect, useMemo } from "react";
 import styles from "./Title.module.scss";
 import { TitleBig, Contents } from "../common/typo/Typo";
 
-const Title = ({
-  title,
-  titleClassName,
-  maxContents,
-  minContents,
-  contentClassName,
-}) => {
-  const [contentsString, setContentsString] = useState("");
-  const titleText = <>{title}</>;
-  // const maxWidthContents = useMemo(() => <>{maxContents}</>, [maxContents]);
-  // const minWidthContents = useMemo(() => <>{minContents}</>, [minContents]);
-  const maxWidthContents = <>{maxContents}</>;
-  const minWidthContents = <>{minContents}</>;
-
-  const tabletMql = window.matchMedia("screen and (min-width:util.rem(992px))");
-
-  const changeEventHandler = useCallback(
-    (e) => {
-      if (e.matches) {
-        setContentsString(maxWidthContents);
-      } else {
-        setContentsString(minWidthContents);
-      }
-    },
-    [maxWidthContents, minWidthContents]
-  );
-  tabletMql.addEventListener("change", changeEventHandler);
-
-  useEffect(() => {
-    if (window.innerWidth > 992) {
-      setContentsString(maxWidthContents);
-    }
-
-    if (tabletMql.matches) {
-      setContentsString(maxWidthContents);
-    } else {
-      setContentsString(minWidthContents);
-    }
-
-    return () => {
-      tabletMql.removeEventListener("change", changeEventHandler);
-    };
-  }, []);
-
+const Title = ({ titleClassName, maxContents, minContents }) => {
   return (
     <div className={styles.title}>
       <TitleBig className={titleClassName} titleBig={titleText} />
-      <Contents className={contentClassName} contents={contentsString} />
+      <Contents
+        className={`${styles.maxContents} {contentClassName}`}
+        contents={maxContents}
+      />
+      <Contents
+        className={`${styles.minContents} {contentClassName}`}
+        contents={minContents}
+      />
     </div>
   );
 };
