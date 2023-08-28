@@ -5,7 +5,7 @@ import "./style/style.scss";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from "react-router-dom";
-import Home from "./pages/home/Home";
+import Main from "./pages/main/Main";
 import App from "./App";
 import ServiceLabeling from "./pages/service-labeling/ServiceLabeling";
 import DataProcess3d from "./pages/service-labeling/DataProcess3d";
@@ -24,7 +24,7 @@ import DataDealing from "./pages/data-dealing/DataDealing";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App component={<Home />} />,
+    element: <App component={<Main />} />,
   },
   {
     path: "/introduce",
