@@ -3,6 +3,7 @@ import Contact from "../ai-development/components/Contact";
 import InHouseTitle from "./components/InHouseTitle";
 import InHouseWorkProcess from "./components/InHouseWorkProcess";
 import InHousePrevention from "./components/InHousePrevention";
+import InHouseManage from "./components/InHouseManage";
 
 export default function InHouseOperation() {
   return (
@@ -10,6 +11,7 @@ export default function InHouseOperation() {
       <InHouseTitle />
       <InHouseWorkProcess />
       <InHousePrevention />
+      <InHouseManage />
       <Strength />
       <Contact />
     </>
