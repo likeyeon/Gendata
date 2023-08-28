@@ -1,6 +1,8 @@
 import { useState, useCallback, useEffect } from "react";
+import { useLocation } from "react-router";
 import styles from "./Gnb.module.scss";
 import logo_dark from "../../assets/gnb/logo_dark.png";
+import logo_white from "../../assets/gnb/logo_white.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -47,8 +49,51 @@ const Gnb = () => {
     };
   }, [mqHandler]);
 
+  const path = useLocation().pathname;
+
+  const pathBuildingData = [
+    "/data-collection",
+    "/gendata-service-labeling",
+    "/inhouse-operation",
+  ];
+
+  const pathService = [
+    "/ai-development",
+    "/government-support-project",
+    "/data-dealing",
+  ];
+  const pathEducation = ["/ai-education"];
+
+  useEffect(() => {
+    if (pathBuildingData.includes(path)) {
+      handleServiceClick();
+      handleDataClick();
+    } else if (pathService.includes(path)) {
+      handleServiceClick();
+    } else if (pathEducation.includes(path)) {
+      handleEduClick();
+    }
+  }, []);
+
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const handleScroll = () => {
+    const position = document.documentElement.scrollTop;
+    setScrollPosition(position);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className={styles.header}>
+    <header
+      className={`${
+        !scrollPosition && path === "/" ? styles.header_top : styles.header
+      }`}
+    >
       <nav className={styles.nav}>
         <div className={styles.nav_bar}>
           {isOpen ? <div className={styles.background_dark}></div> : ""}
@@ -56,7 +101,9 @@ const Gnb = () => {
             <a href="/">
               <img
                 className={styles.logo_dark}
-                src={logo_dark}
+                src={`${
+                  !scrollPosition && path === "/" ? logo_white : logo_dark
+                }`}
                 alt="logo"
               ></img>
             </a>
@@ -226,34 +273,60 @@ const Gnb = () => {
                     <ul
                       className={isDataFolded ? styles.folded : styles.spread}
                     >
-                      <li className={styles.depth_03}>
+                      <li
+                        className={`${styles.depth_03} ${
+                          path === "/gendata-service-labeling"
+                            ? styles.path
+                            : ""
+                        }`}
+                      >
                         <a href="/gendata-service-labeling">
                           <span>데이터 가공</span>
                         </a>
                       </li>
-                      <li className={styles.depth_03}>
+                      <li
+                        className={`${styles.depth_03} ${
+                          path === "/data-collection" ? styles.path : ""
+                        }`}
+                      >
                         <a href="/data-collection">
                           <span>원천데이터 수집</span>
                         </a>
                       </li>
-                      <li className={styles.depth_03}>
+                      <li
+                        className={`${styles.depth_03} ${
+                          path === "/inhouse-operation" ? styles.path : ""
+                        }`}
+                      >
                         <a href="/inhouse-operation">
                           <span>품질 및 보안</span>
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/ai-development" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/ai-development">
                       <span>AI모델 개발</span>
                     </a>
                   </li>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/government-support-project" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/government-support-project">
                       <span>정부지원사업</span>
                     </a>
                   </li>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/data-dealing" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/data-dealing">
                       <span>데이터 거래</span>
                     </a>
@@ -274,7 +347,11 @@ const Gnb = () => {
                   </span>
                 </a>
                 <ul className={isEduFolded ? styles.folded : styles.spread}>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/ai-education" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/ai-education">
                       <span>AI 에듀 사업</span>
                     </a>

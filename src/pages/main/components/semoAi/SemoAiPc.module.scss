@@ -1,0 +1,57 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.contents_wrap {
+  width: 100%;
+  padding: util.rem(180px) 0;
+
+  background-color: #f5f5f5;
+}
+
+.contents {
+  width: 100%;
+}
+
+.card_img {
+  padding: 0 util.rem(15px);
+  & > img {
+    display: inline-block;
+    width: 100%;
+  }
+}
+
+.text_table {
+  width: 100%;
+  padding-top: util.rem(120px);
+  padding-bottom: util.rem(20px);
+}
+
+.text {
+  align-self: center;
+  font-size: util.rem(33px);
+  color: colors.$white_c01;
+  line-height: 1.6;
+}
+
+.text_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #1a3384;
+  border: none;
+  border-radius: 31px;
+  padding: util.rem(20px) util.rem(160px);
+}
+
+.banner_img {
+  & > img {
+    width: util.rem(164px);
+    height: util.rem(168px);
+    margin: 0;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}

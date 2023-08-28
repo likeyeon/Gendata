@@ -1,0 +1,7 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.support_main {
+  background-color: #f5f6f8;
+  padding: util.rem(140px) 0;
+}

@@ -12,11 +12,12 @@
 }
 
 #root {
-  width: 100vw;
+  width: 100%;
 }
 
 .content {
   padding-top: util.rem(116px);
+  overflow-x: hidden;
 
   @media screen and (max-width: util.rem(991px)) {
     padding-top: util.rem(84.5px);

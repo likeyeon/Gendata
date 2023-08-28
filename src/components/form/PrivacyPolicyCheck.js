@@ -1,6 +1,5 @@
 import Modal from "./Modal";
 import styles from "./PrivacyPolicyCheck.module.scss";
-// import { useState } from "react";
 
 const PrivacyPolicyCheck = ({ modal, handleOpenModal }) => {
   return (

@@ -1,0 +1,23 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.main {
+  padding: util.rem(180px) 0;
+}
+.contents_wrap {
+  display: flex;
+}
+
+.clients_title {
+  width: 25%;
+  padding: 0 util.rem(15px);
+}
+
+.img_wrap {
+  width: 75%;
+  padding: util.rem(15px);
+
+  & > img {
+    display: inline-block;
+  }
+}

@@ -2,6 +2,7 @@ import styles from "./Form.module.scss";
 import InputField from "../../../components/form/InputField";
 import SelectField from "../../../components/form/SelectField";
 import TextareaField from "../../../components/form/TextareaField";
+import FormButton from "../../../components/form/FormButton";
 
 const Form = ({ children }) => {
   const handleSubmit = (e) => {
@@ -40,6 +41,7 @@ const Form = ({ children }) => {
               <InputField name={"email"} label={"담당자님 이메일"} />
               {children}
             </form>
+            <FormButton innerText={"문의 완료!"} />
           </div>
         </div>
       </div>

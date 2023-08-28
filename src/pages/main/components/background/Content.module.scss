@@ -1,0 +1,68 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.main {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0 auto;
+}
+
+.content_wrap {
+  margin-top: util.rem(200px);
+}
+
+.data_table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: colors.$white_c01;
+  text-align: center;
+  margin: util.rem(100px) auto;
+
+  p:nth-child(1) {
+    font-size: util.rem(74px);
+    line-height: 1.15;
+  }
+  p:nth-child(2) {
+    font-size: util.rem(33px);
+    line-height: 4;
+  }
+}
+
+.center_wrap {
+  padding: util.rem(20px) 0;
+}
+
+.data_text_wrap {
+  display: flex;
+  // width: util.rem(750px);
+  justify-content: space-evenly;
+}
+hr {
+  text-align: center;
+  border: 1px solid #3d3d4a;
+  margin: util.rem(20px) 0;
+}
+
+.data_wrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  p {
+    padding: util.rem(16px);
+    color: #feb22b;
+    font-size: util.rem(40px);
+    font-weight: 700;
+  }
+  span {
+    color: #888888;
+    font-size: util.rem(16px);
+    font-weight: 600;
+  }
+}
