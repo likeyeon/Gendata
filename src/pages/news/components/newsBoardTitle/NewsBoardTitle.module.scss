@@ -10,3 +10,12 @@
     height: util.rem(195px);
   }
 }
+
+.titlePadding {
+  padding: util.rem(22px) 0;
+
+  @media (max-width: util.rem(992px)) {
+    padding: util.rem(8px) 0;
+
+  }
+}
