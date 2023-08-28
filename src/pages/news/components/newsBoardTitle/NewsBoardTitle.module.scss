@@ -1,0 +1,12 @@
+@use "../../../../style/util";
+
+.titleContainer {
+  height: util.rem(450px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: util.rem(992px)) {
+    height: util.rem(195px);
+  }
+}
