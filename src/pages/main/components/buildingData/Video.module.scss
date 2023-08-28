@@ -1,0 +1,13 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.video_wrap {
+  width: 100%;
+  padding: util.rem(20px) 0;
+}
+
+@media screen and (max-width: util.rem(991px)) {
+  iframe {
+    height: util.rem(550px);
+  }
+}

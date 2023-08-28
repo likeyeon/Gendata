@@ -27,7 +27,7 @@ const Content = () => {
                   <span>AI 응용 소프트웨어 개발</span>
                 </div>
                 <div className={styles.data_wrap}>
-                  <p>100건+</p>
+                  <p>9건+</p>
                   <span>품질 검증</span>
                 </div>
               </div>
