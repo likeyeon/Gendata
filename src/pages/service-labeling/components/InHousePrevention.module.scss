@@ -1,0 +1,58 @@
+@use "../../../style/util";
+@use "../../../style/colors";
+
+.PreventionWrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: util.rem(220px) util.rem(15px) util.rem(185px);
+}
+.PreventionTitle {
+  font-size: util.rem(45px);
+  font-weight: 700;
+  margin-bottom: util.rem(120px);
+  text-align: center;
+  line-height: 1.2;
+}
+.PreventionList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: util.rem(120px);
+  row-gap: util.rem(55px);
+}
+.PreventionItem {
+  width: util.rem(420px);
+  height: util.rem(340px);
+
+  > img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+@media screen and (max-width:util.rem(991px)){
+  .PreventionWrap {
+    padding: util.rem(100px) 0 util.rem(85px);
+  }
+  .PreventionTitle {
+    font-size: util.rem(30px);
+    margin-bottom: util.rem(65px);
+  }
+  .PreventionList {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 0;
+    row-gap: util.rem(55px);
+  }
+  .PreventionItem {
+    text-align: center;
+    height: util.rem(330px);
+    
+    > img {
+      width: 90%;
+      height: 100%;
+    }
+  }
+}
