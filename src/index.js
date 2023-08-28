@@ -19,6 +19,8 @@ import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
 import News from "./pages/news/News";
 import Contact from "./pages/contact/Contact";
+import AiService from "./pages/ai-service/AiService";
+import ProjectDevelop  from "./pages/project-develop/Project";
 import NewsContents from "./pages/newsContents/NewsContents.js"; //
 import Government from "./pages/government/Government";
 import DataDealing from "./pages/data-dealing/DataDealing";
@@ -75,16 +77,15 @@ const router = createBrowserRouter([
     path: "/ai-education",
     element: <App component={<Education />} />,
   },
-  /* 프로젝트 공고 */
-  // {
-  //   path: "AI-data-project",
-  //   element: <App component={< />} />,
-  // },
-  /* AI 서비스 */
-  // {
-  //   path: "AI-service-paga",
-  //   element: <App component={< />} />,
-  // },
+
+  {
+    path: "AI-data-project",
+    element: <App component={<ProjectDevelop/>} />,
+  },
+  {
+    path: "AI-service-paga",
+    element: <App component={<AiService/>} />,
+  },
   /* 소식 */
   // {
   //   path: "/news",
@@ -125,6 +126,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
+    
   </React.StrictMode>
 );
 

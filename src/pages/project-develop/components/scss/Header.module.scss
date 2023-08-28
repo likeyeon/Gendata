@@ -1,0 +1,58 @@
+@use 'util';
+
+.container {
+  width: 100%;
+  height: util.rem(394.96px);
+
+  .item {
+    width: util.rem(1280px);
+    height: util.rem(394.96px);
+    padding: util.rem(15px) util.rem(15px);
+    margin: 0 auto;
+
+    .box {
+
+      display: table-cell;
+      width: util.rem(420px);
+      height: util.rem(364.96px);
+      padding: util.rem(5px);
+      overflow: hidden;
+      vertical-align: top;
+      position: relative;
+
+      img {
+        display: table;
+        width: util.rem(408.22px);
+        height: util.rem(230px);
+        box-sizing: border-box;
+      }
+
+      .text_wrap{
+
+        display: table;
+        width: util.rem(408.22px);
+        height: util.rem(123.18px);
+        padding: util.rem(12px);
+        background: transparent;
+        text-align: left;
+        vertical-align: middle;
+
+        .text{
+          font-size: util.rem(23px);
+          color: #212121;
+          line-height: 1.6;
+          font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+
+          .body{
+            display: block;
+            font-size: util.rem(16px);
+            color: #999;
+          }
+        }
+        
+
+      }
+  
+    }
+  }
+}
