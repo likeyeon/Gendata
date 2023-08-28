@@ -10,7 +10,7 @@ import thumbsUp from "../../assets/strength/emoji-thumbsUp.png";
 import tools from "../../assets/strength/emoji-tools.png";
 
 const Strength = () => {
-  const Strength = ({
+  const Strengths = ({
     img,
     maxTitle,
     minTittle,
@@ -86,7 +86,7 @@ const Strength = () => {
         }
       />
       <div className={styles.strengthTable}>
-        <Strength
+        <Strengths
           moveLeft={styles.moveLeft}
           img={thumbsUp}
           maxTitle="데이터 품질"
@@ -106,7 +106,7 @@ const Strength = () => {
             </>
           }
         />
-        <Strength
+        <Strengths
           moveLeft=""
           img={tools}
           maxTitle="Annotation Tools"
@@ -126,16 +126,14 @@ const Strength = () => {
             </>
           }
         />
-        <Strength
+        <Strengths
           moveLeft={styles.moveLeft}
           img={lock}
           maxTitle="데이터 보안"
           minTittle="데이터 보안"
           maxContents={
             <>
-              인하우스 작업 진행과 모든 작업자 NDA 서류를
-              <br />
-              통해 보안을 강화합니다
+              인하우스 작업 진행과 모든 작업자 NDA 서류를 통해 보안을 강화합니다
             </>
           }
           minContents={
@@ -146,7 +144,7 @@ const Strength = () => {
             </>
           }
         />
-        <Strength
+        <Strengths
           moveLeft=""
           img={monkey}
           maxTitle="개인정보 이슈차단"
@@ -166,7 +164,7 @@ const Strength = () => {
             </>
           }
         />
-        <Strength
+        <Strengths
           moveLeft={styles.moveLeft}
           img={cd}
           maxTitle="A-Z 데이터 구축 서비스"

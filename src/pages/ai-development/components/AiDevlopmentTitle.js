@@ -2,7 +2,7 @@ import Title from "../../../components/title/Title";
 
 const AiDevlopmentTitle = () => {
   return (
-    <div className={styles.titleContainer}>
+    <div className="">
       <Title
         title="AI 개발"
         titleClassName=""

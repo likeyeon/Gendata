@@ -9,10 +9,10 @@ export default function AiDevelopment() {
     <>
       <AiDevlopmentTitle />
       <AiDevelopmentApplication />
-      {/* <AiDevelopmentRecommend /> 완료*/}
-      {/* <AiDevelopmentCase />
+      <AiDevelopmentRecommend />
+      <AiDevelopmentCase />
       <Strength />
-      <Contact /> */}
+      <Contact />
     </>
   );
 }
