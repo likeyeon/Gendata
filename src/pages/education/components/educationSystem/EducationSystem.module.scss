@@ -22,7 +22,6 @@
 
 }
 
-.educationSystemTitle {}
 
 .educationSystemContents {
   font-size: util.rem(16px);
@@ -36,7 +35,8 @@
 }
 
 .educationSystemImg {
-  width: util.rem(1250px);
+  max-width: util.rem(1250px);
+  width: 100%;
   height: auto;
   padding: util.rem(15px) 0 util.rem(15px);
 

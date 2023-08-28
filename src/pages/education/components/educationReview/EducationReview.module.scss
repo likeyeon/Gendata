@@ -7,6 +7,7 @@
   align-items: center;
   width: 100%;
   height: util.rem(1477px);
+  margin: 0 auto;
 
   @media (max-width: util.rem(1400px)) {
     width: 95vw;
@@ -26,13 +27,15 @@
 }
 
 .educationReviewImg {
-  width: auto;
+  max-width: 1199px;
+  max-height: 925px;
+  width: 100%;
   height: auto;
-  margin: util.rem(15px) util.rem(25px);
+  margin: util.rem(15px) auto;
   margin-bottom: util.rem(180px);
 
   @media (max-width: util.rem(992px)) {
-    width: 90vw;
+    width: 100%;
     height: auto;
   }
 }
