@@ -2,7 +2,7 @@ import Title from "../../../components/title/Title";
 
 const AiDevlopmentTitle = () => {
   return (
-    <>
+    <div className="">
       <Title
         title="AI 개발"
         titleClassName=""
@@ -25,7 +25,7 @@ const AiDevlopmentTitle = () => {
         }
         contentClassName=""
       />
-    </>
+    </div>
   );
 };
 export default AiDevlopmentTitle;

@@ -1,47 +1,52 @@
 @use "../../../style/util";
 
 .recommendBackground {
-  width: 100vw;
-  height: util.rem(800px);
+  width: 100%;
+  max-height: util.rem(800px);
+  height: fit-content;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: util.rem(992px)) {
-    height: util.rem(657px)
-  }
-
+  padding: 0 util.rem(60px);
+  margin: 0 auto;
 }
 
 .recommendContent {
   position: relative;
   display: grid;
   grid-template-columns: 1fr auto;
-  width: 60%;
+  width: 100%;
+  max-width: util.rem(1036.670px);
+  margin-top: util.rem(110px);
 
   @media (max-width: util.rem(992px)) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: util.rem(68.995px);
+
   }
 
 }
 
 .recommendContentImges {
+
+  max-width: util.rem(412px);
+  width: 100%;
   max-height: util.rem(300px);
-  height: 100%;
-  // margin-left: util.rem(-100px); // 확인필요
+  height: auto;
+
   padding: 0;
 
 
   @media (max-width: util.rem(992px)) {
-    max-height: util.rem(300px);
-    height: 40%;
-    text-align: center;
+    width: auto;
+    max-height: util.rem(250px);
+    height: 100%;
   }
 }
 
@@ -50,6 +55,13 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: util.rem(992px)) {
+    width: auto;
+    max-height: util.rem(250px);
+    height: 100%;
+    margin-bottom: util.rem(30px);
+
+  }
 }
 
 .recommendContentText>.recommendContentTitle {
@@ -79,18 +91,30 @@
 }
 
 .recommendContentCardsTable {
-  width: 60%;
+  width: 100%;
+  max-width: util.rem(1036.670px);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: util.rem(110px);
 
   @media (max-width: util.rem(992px)) {
     display: none;
+    margin-bottom: util.rem(62.99px);
   }
 }
 
 .recommendContentImgesCards {
-  width: auto;
+  max-width: util.rem(485px);
+  width: 50%;
   max-height: util.rem(229px);
   height: 100%;
+  margin: 0;
+
+  @media (max-width: util.rem(992px)) {
+    margin: util.rem(15px) 0;
+    max-width: util.rem(312px);
+
+    max-height: util.rem(300px);
+  }
 }
