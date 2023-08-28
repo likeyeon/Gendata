@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from "react";
+import { useLocation } from "react-router";
 import styles from "./Gnb.module.scss";
 import logo_dark from "../../assets/gnb/logo_dark.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -46,6 +47,32 @@ const Gnb = () => {
       mobileMql.removeEventListener("change", mqHandler);
     };
   }, [mqHandler]);
+
+  const path = useLocation().pathname;
+
+  const pathBuildingData = [
+    "/data-collection",
+    "/gendata-service-labeling",
+    "/inhouse-operation",
+  ];
+
+  const pathService = [
+    "/ai-development",
+    "/government-support-project",
+    "/data-dealing",
+  ];
+  const pathEducation = ["/ai-education"];
+
+  useEffect(() => {
+    if (pathBuildingData.includes(path)) {
+      handleServiceClick();
+      handleDataClick();
+    } else if (pathService.includes(path)) {
+      handleServiceClick();
+    } else if (pathEducation.includes(path)) {
+      handleEduClick();
+    }
+  }, []);
 
   return (
     <header className={styles.header}>
@@ -226,34 +253,60 @@ const Gnb = () => {
                     <ul
                       className={isDataFolded ? styles.folded : styles.spread}
                     >
-                      <li className={styles.depth_03}>
+                      <li
+                        className={`${styles.depth_03} ${
+                          path === "/gendata-service-labeling"
+                            ? styles.path
+                            : ""
+                        }`}
+                      >
                         <a href="/gendata-service-labeling">
                           <span>데이터 가공</span>
                         </a>
                       </li>
-                      <li className={styles.depth_03}>
+                      <li
+                        className={`${styles.depth_03} ${
+                          path === "/data-collection" ? styles.path : ""
+                        }`}
+                      >
                         <a href="/data-collection">
                           <span>원천데이터 수집</span>
                         </a>
                       </li>
-                      <li className={styles.depth_03}>
+                      <li
+                        className={`${styles.depth_03} ${
+                          path === "/inhouse-operation" ? styles.path : ""
+                        }`}
+                      >
                         <a href="/inhouse-operation">
                           <span>품질 및 보안</span>
                         </a>
                       </li>
                     </ul>
                   </li>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/ai-development" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/ai-development">
                       <span>AI모델 개발</span>
                     </a>
                   </li>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/government-support-project" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/government-support-project">
                       <span>정부지원사업</span>
                     </a>
                   </li>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/data-dealing" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/data-dealing">
                       <span>데이터 거래</span>
                     </a>
@@ -274,7 +327,11 @@ const Gnb = () => {
                   </span>
                 </a>
                 <ul className={isEduFolded ? styles.folded : styles.spread}>
-                  <li className={styles.depth_02}>
+                  <li
+                    className={`${styles.depth_02} ${
+                      path === "/ai-education" ? styles.path : ""
+                    }`}
+                  >
                     <a href="/ai-education">
                       <span>AI 에듀 사업</span>
                     </a>

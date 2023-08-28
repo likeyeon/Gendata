@@ -205,7 +205,9 @@
   }
   a {
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     text-decoration: none;
     color: #212121e3;
   }
@@ -217,24 +219,20 @@
 
 .icon_chervron {
   font-size: util.rem(14px);
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: util.rem(14px) util.rem(20px);
   color: #8b8b8b;
 }
 
 .depth_02 {
   a {
     font-size: util.rem(13px);
-    padding: util.rem(8px) util.rem(50px) util.rem(8px) util.rem(20px);
+    padding: util.rem(8px) util.rem(25px) util.rem(8px) util.rem(25px);
   }
-  & > a {
-    padding-left: util.rem(30px);
-  }
+}
 
-  .icon_chervron {
-    padding: util.rem(8px) util.rem(20px);
+.path {
+  a {
+    background: #f5f5f5;
+    color: #111;
   }
 }
 
