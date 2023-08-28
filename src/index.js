@@ -13,6 +13,7 @@ import DataProcessText from "./pages/service-labeling/DataProcessText";
 import DataProcessVideo from "./pages/service-labeling/DataProcessVideo";
 import DataProcessAudio from "./pages/service-labeling/DataProcessAudio";
 import DataCollection from "./pages/service-labeling/DataCollection";
+import InHouseOperation from "./pages/service-labeling/InHouseOperation";
 import About from "./pages/about/About";
 import AiDevelopment from "./pages/ai-development/AiDevelopment";
 import Education from "./pages/education/Education";
@@ -59,6 +60,10 @@ const router = createBrowserRouter([
   {
     path: "/data-collection",
     element: <App component={<DataCollection />} />,
+  },
+  {
+    path: "/inhouse-operation",
+    element: <App component={<InHouseOperation />} />,
   },
   {
     path: "/ai-development",
