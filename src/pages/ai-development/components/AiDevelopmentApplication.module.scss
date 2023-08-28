@@ -1,16 +1,21 @@
 @use "../../../style/util";
 
 .applicationBackground {
-  background-image: linear-gradient(to bottom, #f5f5f6, white);
-  height: util.rem(1141px);
+  background-color: #f4f4f5;
+  //background-image: linear-gradient(to bottom, #f5f5f6, white);
+  width: 100%;
+  // max-height: util.rem(1141px);
+  height: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  padding: 85px 0;
 
   @media (max-width: util.rem(992px)) {
-    margin: util.rem(100px) util.rem(15px);
-    height: util.rem(1116px);
+    //margin: util.rem(100px) util.rem(15px);
+    // height: util.rem(1116px);
 
   }
 }
@@ -19,7 +24,7 @@
   @media (min-width: 993px) {
     padding-bottom: util.rem(20px);
     ;
-    margin-top: util.rem(76px);
+    margin-top: util.rem(73px);
     ;
   }
 
@@ -38,29 +43,35 @@
   ;
 
   @media (max-width: util.rem(992px)) {
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
 }
 
-.applicationItems {
+.applicationItems,
+.minCards {
   justify-self: center;
-  width: auto;
-  height: util.rem(167px);
+  max-width: util.rem(360px);
+  width: 100%;
   margin: util.rem(18px) 0 util.rem(18px) 0;
+}
 
-  @media (max-width: util.rem(992px)) {
-    max-width: 100%;
-    width: util.rem(307px);
-    height: util.rem(112px);
-    padding: util.rem(15px) 0;
+.minCardContainer {
+  display: none;
+
+  @media (min-width: 993px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 }
 
 .character {
-  width: auto;
-  height: util.rem(249px);
-  padding-top: util.rem(45px);
+  max-width: util.rem(253px);
+  width: 100%;
+  // max-height: util.rem(249px);
+  height: auto;
+  //padding-top: util.rem(45px);
 
   @media (min-width: 993px) {
     position: relative;
