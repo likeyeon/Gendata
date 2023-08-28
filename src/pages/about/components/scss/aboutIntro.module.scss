@@ -3,8 +3,14 @@
 
 .container {
 
-  width: 100%;
+  max-width: 100%;
   height: util.rem(865px);
+
+  @media screen and (max-width: util.rem(990px)) {
+    width: util.rem(1165.18px);
+    height: util.rem(567.59px);
+  }
+
 
   .items{
 
@@ -73,7 +79,7 @@
       }
 
       .one{
-
+        display: grid;
         width: util.rem(503.33px);
         height: util.rem(72px);
         font-size: util.rem(14px);
@@ -81,6 +87,7 @@
         text-align: left;
         line-height: util.rem(25px);
         font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+
 
       }
 

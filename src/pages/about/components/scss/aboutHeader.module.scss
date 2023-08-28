@@ -1,10 +1,11 @@
 @use 'util';
 
 
+
 .container {
 
   display: flex;
-  width: util.rem(1519.2px);
+  width: 100%;
   height: util.rem(422px);
   justify-content: center;
   align-items: center;
@@ -34,7 +35,7 @@
         align-items: center;
         color: rgb(0, 0, 0);
         font-size: util.rem(70px);
-        font-weight: bold;
+        font-weight: 700;
         width: util.rem(242.55px);
         height: util.rem(98.4px);
         font-family: 'Spoqa Han Sans Neo', 'sans-serif';

@@ -1,7 +1,114 @@
 @use 'util';
 
 .container{
+
   width: 100%;
   height: util.rem(1454.8px);
+
+  .space{ // 빈 공간
+
+    width: util.rem(1280px);
+    height: util.rem(180px);
+    padding: util.rem(0px) util.rem(15px);
+    margin: 0 auto;
+
+  }
+
+  .history{ // history 텍스트 박스 레이아웃
+
+    width: util.rem(1280px);
+    height: util.rem(102px);
+    padding: util.rem(20px) util.rem(542px);
+    margin: 0 auto;
+
+    strong{ // history 텍스트
+      color: rgb(0, 0, 0);
+      font-size: 45px;
+      font-weight: 700;
+      font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+      text-align: center;
+    }
+  }
+
+  .bar { // 빈 공간
+
+    width: util.rem(1280px);
+    height: util.rem(60px);
+    padding: util.rem(0px) util.rem(15px);
+    margin: 0 auto;
+
+  }
+
+  .button_layout { // 버튼 세개 레이아웃
+
+    width: util.rem(1280px);
+    height: util.rem(38.8px);
+    padding: util.rem(7.2px) util.rem(403px);
+    margin: 0 auto;
+    text-align: center;
+
+
+    .button { // 버튼 스타일 & 텍스트 
+
+      width: util.rem(118px);
+      height: util.rem(55.6px);
+      margin: util.rem(20px);
+      font-size: util.rem(18px);
+      padding: util.rem(15px) util.rem(35.5px);
+      color: #484848;
+      font-weight: 600;
+      background-color: #F5F5F5;
+      border-radius: util.rem(27px);
+      cursor: pointer;
+      font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+      text-align: center;
+
+      &.selected {
+        color: #000000;
+      }
+
+     
+    }
+
+    
+  }
   
+  .space_bar{ // 빈 공간
+
+    width: util.rem(1280px);
+    height: util.rem(107px);
+    padding: util.rem(0px) util.rem(15px);
+    margin: 0 auto;
+
+
+  }
+
+  .img_box{
+    width: util.rem(1280px);
+    height: util.rem(787px);
+    padding: util.rem(0px) util.rem(15px);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .year2023 {
+    width: util.rem(829px);
+    height: util.rem(787px);  
+  }
+  
+
+  .year2022 {
+
+    width: util.rem(674px);
+    height: util.rem(751.93px);  
+  }
+
+  .year2021 {
+
+    width: util.rem(532px);
+    height: util.rem(241px);  
+    
+  }
+
+ 
 }

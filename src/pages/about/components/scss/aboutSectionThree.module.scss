@@ -16,20 +16,20 @@
 
     width: util.rem(1280px);
     height: util.rem(447px);
-    padding: util.rem(22.5px) util.rem(15px);
+    padding: util.rem(30px) util.rem(15px);
     margin: 0 auto;
 
     img{
 
-      width: util.rem(301.25px);
-      height: util.rem(402px);
-      margin-right: util.rem(15px);
+      width: util.rem(290px);
+      height: util.rem(387px);
+      margin-right: util.rem(30px);
 
     }
 
-    .last{ // 행의 마지막 이미지 
-      width: util.rem(301.25px);
-      height: util.rem(402px);
+    .last{ // 행의 마지막 이미지
+      width: util.rem(290px);
+      height: util.rem(387px);
       margin-right: util.rem(0px);
       
     }
@@ -45,24 +45,24 @@
 
     img{
 
-      width: util.rem(308.75px);
-      height: util.rem(412px);
-      margin-right: util.rem(5px);
+      width: util.rem(305px);
+      height: util.rem(407px);
+      margin-right: util.rem(10px);
 
     }
 
     .last{ // 행의 마지막 이미지
-      width: util.rem(308.75px);
-      height: util.rem(412px);
+      width: util.rem(305px);
+      height: util.rem(407px);
       margin-right: util.rem(0px);
     }
 
     .img{ // 마지막 줄 이미지 세개 
 
-      width: util.rem(308.75px);
-      height: util.rem(412px);
-      margin-top: util.rem(5px);
-      margin-right: util.rem(5px);
+      width: util.rem(305px);
+      height: util.rem(407px);
+      margin-top: util.rem(10px);
+      margin-right: util.rem(10px);
 
     }
 
