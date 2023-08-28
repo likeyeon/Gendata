@@ -1,7 +1,7 @@
 @use "../../../style/util";
 
-.AiDevlopmentTitle {
-  height: util.rem(510px);
+.titleContainer>Title {
+  height: util.rem(400px);
   display: flex;
   flex-direction: column;
   justify-content: center;
