@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./AutoSlider.module.scss";
+import Inside from "../../../components/inside/Inside";
 
 const Slide = ({ images, className, animationDuration }) => (
   <div className={`${styles.slide} ${className}`} style={{ animationDuration }}>
@@ -15,22 +16,26 @@ const Slide = ({ images, className, animationDuration }) => (
 
 const AutoSlider = ({ ImgArr, animationDuration }) => {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.slideContainer}>
-        <ul className={styles.slideWrapper}>
-          <Slide
-            images={ImgArr}
-            className={styles.original}
-            animationDuration={animationDuration}
-          />
-          <Slide
-            images={ImgArr}
-            className={styles.clone}
-            animationDuration={animationDuration}
-          />
-        </ul>
-      </div>
-    </div>
+    <main className={styles.main}>
+      <Inside>
+        <div className={styles.wrapper}>
+          <div className={styles.slideContainer}>
+            <ul className={styles.slideWrapper}>
+              <Slide
+                images={ImgArr}
+                className={styles.original}
+                animationDuration={animationDuration}
+              />
+              <Slide
+                images={ImgArr}
+                className={styles.clone}
+                animationDuration={animationDuration}
+              />
+            </ul>
+          </div>
+        </div>
+      </Inside>
+    </main>
   );
 };
 

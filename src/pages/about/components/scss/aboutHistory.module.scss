@@ -35,8 +35,7 @@
     text-align: center;
 
     .button {
-      width: util.rem(118px);
-      height: util.rem(55.6px);
+      cursor: pointer;
       margin: util.rem(20px);
       font-size: util.rem(18px);
       padding: util.rem(15px) util.rem(35.5px);
@@ -85,11 +84,14 @@
   .button_layout {
     display: flex;
     width: util.rem(340px);
-    padding-bottom: util.rem(30px);
+    padding-bottom: util.rem(40px);
+    justify-content: center;
 
     .button {
       background-color: colors.$white_c01 !important;
       margin: 0 !important;
+      padding: util.rem(16px) util.rem(12px) !important;
+      font-size: 15px !important;
     }
   }
 

@@ -1,3 +1,12 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+.main {
+  display: block;
+  background-color: #f2f2f2;
+  padding: util.rem(150px) 0;
+}
+
 ul,
 li {
   list-style: none;
@@ -42,8 +51,6 @@ li {
   &.clone {
     animation: linear infinite infiniteAnimation2;
   }
-
-
 }
 
 li {
@@ -52,13 +59,14 @@ li {
   transform: scale(1);
 }
 
-.item>img {
-  width: 200px;
-  height: 200px;
+.item > img {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
+  margin: 20px;
+  width: 261px !important;
+  height: 370px !important;
 }
 
 @keyframes infiniteAnimation1 {
@@ -86,5 +94,11 @@ li {
 
   100% {
     transform: translateX(-200%);
+  }
+}
+
+@media screen and (max-width: util.rem(991px)) {
+  .main {
+    display: none;
   }
 }
