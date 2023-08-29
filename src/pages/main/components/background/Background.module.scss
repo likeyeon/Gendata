@@ -7,12 +7,13 @@
   position: relative;
   background: url("../../../../assets/main/back.jpg") no-repeat center center;
   background-size: cover;
-  top: util.rem(-120px);
+  top: util.rem(-116px);
 }
 
 @media screen and (max-width: util.rem(991px)){
   .section {
-    height: 100vh;
-    top: util.rem(-90px);
+    min-height: 100%;
+    height: util.rem(850px);
+    top: util.rem(-84.5px);
   }
 }

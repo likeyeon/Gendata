@@ -2,8 +2,8 @@
 @use "../../../../style/util";
 
 .text_wrap {
-  margin: util.rem(10px) 0;
-  color: #000000d9;
+  margin: util.rem(50px) 0 util.rem(30px);
+  color: colors.$black_c01;
 }
 
 .text {
@@ -11,16 +11,17 @@
   text-align: center;
   line-height: 1.2;
 }
-
 .title {
   font-size: util.rem(24px);
 }
 
 @media screen and (max-width: util.rem(991px)) {
+  .text_wrap {
+    display: none;
+  }
   .text {
     font-size: util.rem(24px);
   }
-
   .title {
     font-size: util.rem(16px);
   }

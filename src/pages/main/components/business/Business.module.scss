@@ -14,10 +14,19 @@
 }
 
 .img_wrap {
-  width: 75%;
+  width: util.rem(960px);
   padding: util.rem(15px);
 
   & > img {
-    display: inline-block;
+    max-width: 100%;
   }
 }
+
+@media screen and (max-width:util.rem(991px)){
+  .contents_wrap {
+    display: none;
+  }
+  .main {
+    padding: 0;
+  }
+} 
