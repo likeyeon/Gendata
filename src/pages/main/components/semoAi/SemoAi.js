@@ -1,13 +1,20 @@
-import Inside from "../../../../components/inside/Inside";
+import styles from "./SemoAi.module.scss";
+
+import SemoAiMobile from "./SemoAiMobile";
 import SemoAiPc from "./SemoAiPc";
 
 const SemoAi = () => {
   return (
-    <main>
-      <Inside>
-        <SemoAiPc />
-      </Inside>
-    </main>
+    <>
+      <div className={styles.contents_wrap}>
+        <div className={styles.pc_contents}>
+          <SemoAiPc />
+        </div>
+        <div className={styles.mobile_contents}>
+          <SemoAiMobile  />
+        </div>
+      </div>
+    </>
   );
 };
 

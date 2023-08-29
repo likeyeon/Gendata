@@ -1,0 +1,36 @@
+@use "../../../../style/util";
+
+.slide_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: util.rem(50px) 0 util.rem(70px);
+  padding: 0;
+  position: relative;
+
+  img {
+    max-width: 100%;
+  }
+}
+div.slide_prev_btn {
+  position: absolute;
+  left:6%;
+  top: 50%;
+  transform: translateY(-50%) scale(0.8);
+
+  button {
+    border: none;
+    background-color: white;
+  }
+} 
+.slide_next_btn {
+  position: absolute;
+  right: 6%;
+  top: 50%;
+  transform: translateY(-50%) scale(0.8);
+  button {
+    border: none;
+    background-color: white;
+  }
+} 
