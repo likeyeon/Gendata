@@ -10,7 +10,7 @@
   margin: util.rem(140.9px) 0;
 
 
-  @media (max-width: 993px) {
+  @media (max-width: 992px) {
     //height: util.rem(285px);
     margin: util.rem(45.5px) 0;
     padding: 0 util.rem(15px);
@@ -21,7 +21,7 @@
   display: block;
   line-height: 1.2;
 
-  @media (max-width: 993px) {
+  @media (max-width: 992px) {
     display: none;
   }
 }
@@ -29,7 +29,7 @@
 .minContents {
   display: none;
 
-  @media (max-width: 993px) {
+  @media (max-width: 992px) {
     display: block;
   }
 }

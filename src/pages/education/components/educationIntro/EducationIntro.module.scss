@@ -8,7 +8,7 @@
   width: 100%;
   height: util.rem(470px);
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     height: util.rem(460px);
   }
 }
@@ -18,7 +18,7 @@
   padding: 0 util.rem(15px);
   color: #363636;
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     font-size: util.rem(14px);
     line-height: 2;
   }
@@ -27,7 +27,7 @@
 .space {
   height: util.rem(32px);
 
-  @media (max-width: 992px) {
+  @media (max-width: 991px) {
     height: util.rem(30px);
   }
 }

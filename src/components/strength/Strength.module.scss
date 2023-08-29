@@ -9,7 +9,7 @@
   background-image: linear-gradient(to bottom, #f0f0f0, #ffffff);
   height: util.rem(1163px);
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     height: util.rem(2354px);
 
   }
@@ -25,7 +25,7 @@
       color: #1c2660;
     }
 
-    @media (max-width: util.rem(992px)) {
+    @media (max-width: util.rem(991px)) {
       line-height: 6;
       font-size: util.rem(33px);
     }
@@ -39,7 +39,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    @media (max-width: util.rem(992px)) {
+    @media (max-width: util.rem(991px)) {
       max-height: util.rem(1978px);
     }
 
@@ -59,7 +59,7 @@
     justify-content: center;
 
 
-    @media (max-width: util.rem(992px)) {
+    @media (max-width: util.rem(991px)) {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -77,7 +77,7 @@
     display: flex;
     align-items: center;
 
-    @media (max-width: util.rem(992px)) {
+    @media (max-width: util.rem(991px)) {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -95,7 +95,7 @@
     align-items: flex-start;
     padding: 0 util.rem(15px);
 
-    @media (max-width: util.rem(992px)) {
+    @media (max-width: util.rem(991px)) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -131,7 +131,7 @@
     margin: 0;
     line-height: 1;
 
-    @media (max-width: util.rem(992px)) {
+    @media (max-width: util.rem(991px)) {
       font-size: util.rem(30px);
       line-height: 1.5;
 
@@ -145,7 +145,7 @@
     font-size: util.rem(18px);
     line-height: 1.2;
 
-    @media (max-width: util.rem(992px)) {
+    @media (max-width: util.rem(991px)) {
       text-align: center;
       font-size: util.rem(15px);
       font-weight: 500px;
