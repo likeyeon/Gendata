@@ -19,12 +19,9 @@
 
 
 
-.img {
-  padding: 0 util.rem(50px);
-  width: 100%;
-}
 
 .slidebtn>button {
   border: none;
   background-color: white;
+  width: util.rem(50px);
 }
