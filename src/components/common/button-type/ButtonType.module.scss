@@ -32,9 +32,18 @@ a {
 }
 .CommonButtonWrap {
   margin-top: util.rem(70px);
+
+  @media screen and (max-width:util.rem(991px)){
+    margin: util.rem(50px);
+  }
 }
 .CommonButton {
   padding: util.rem(17px) util.rem(40px);
   font-weight: 700;
+
+  @media screen and (max-width:util.rem(991px)){
+    padding: util.rem(14px) util.rem(30px);
+    font-size: util.rem(14px);
+  }
 }
 

@@ -15,9 +15,9 @@
 }
 div.slide_prev_btn {
   position: absolute;
-  left:6%;
+  left:2px;
   top: 50%;
-  transform: translateY(-50%) scale(0.8);
+  transform: translateY(-50%) scale(0.5);
 
   button {
     border: none;
@@ -26,9 +26,9 @@ div.slide_prev_btn {
 } 
 .slide_next_btn {
   position: absolute;
-  right: 6%;
+  right: 2px;
   top: 50%;
-  transform: translateY(-50%) scale(0.8);
+  transform: translateY(-50%) scale(0.5);
   button {
     border: none;
     background-color: white;

@@ -2,17 +2,18 @@
 
 .issueAndSecurity {
   width: 100%;
-  ;
   height: fit-content;
   margin: 0 auto;
-  padding: 180px util.rem(15px) 150px;
+  padding: util.rem(180px) util.rem(15px) util.rem(100px);
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 
+  @media screen and (max-width:util.rem(991px)){
+    padding: util.rem(80px) util.rem(15px) 0
+  }
 }
-
 .title {
   width: 100%;
   max-width: util.rem(1250px);
@@ -20,11 +21,11 @@
 
 .maxTitle {
   display: block;
-  font-size: 45px;
-
+  font-size: util.rem(50px);
+  margin-bottom: util.rem(20px);
+  
   @media (max-width: util.rem(991px)) {
     display: none;
-    line-height: 1.6;
   }
 }
 
@@ -33,25 +34,45 @@
 
   @media (max-width: util.rem(991px)) {
     display: block;
+    line-height: 1.5;
+    margin-bottom: util.rem(40px);
+
+    > span {
+      display: block;
+    }
   }
 }
 
 .contentsText {
   font-size: util.rem(20px);
-  line-height: 1.4;
+  line-height: 1.7;
+  width: util.rem(700px);
+  display: inline-block;
+  margin: 0 auto util.rem(50px);
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(15px);
+    padding: 0 util.rem(15px);
+    width: util.rem(370px);
+    margin: 0 auto;
+  }
 }
 
-.blank {
-  height: 45px;
-  margin: util.rem(15px) 0;
-}
+// .blank {
+//   height: 45px;
+//   margin: util.rem(15px) 0;
+// }
 
 .minImg {
   display: none;
-  width: 100%;
 
   @media (max-width: util.rem(991px)) {
     display: block;
+    
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
 }
 
@@ -70,11 +91,13 @@
 
 .maxImgContainer {
   width: 100%;
+  
 }
 
 .maxImgItem {
-  max-width: util.rem(216.854px);
+  max-width: util.rem(220px);
   width: 100%;
   height: auto;
-  margin: util.rem(15px) 0;
+  margin-bottom: util.rem(40px);
+  
 }

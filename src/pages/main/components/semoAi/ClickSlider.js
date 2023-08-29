@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "./ClickSlider.module.scss";
-import nextBtn from "../../../../assets/nextButton.png";
-import prevBtn from "../../../../assets/prevButton.png";
+import nextBtn from "../../../../assets/main/next.png";
+import prevBtn from "../../../../assets/main/prev.png";
 
 const ClickSlider = ({ ImgArr }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
