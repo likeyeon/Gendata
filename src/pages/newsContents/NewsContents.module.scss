@@ -14,7 +14,7 @@
   margin: util.rem(15px) auto; //
   padding: 0 util.rem(30px);
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     padding: 0 util.rem(15px);
     margin: 0 auto;
   }
@@ -37,7 +37,7 @@
   color: rgb(54 54 54);
   margin-bottom: util.rem(30px);
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     border-bottom: solid util.rem(1px) #e5e7eb;
     padding: util.rem(7.5px) util.rem(30px) util.rem(15px) 0;
   }
@@ -53,7 +53,7 @@
   padding: 8px 0 20px;
   color: rgba(54, 54, 54, 0.7);
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     border: none;
     padding: util.rem(15px) util.rem(15px) util.rem(15px) 0;
   }
@@ -81,7 +81,7 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     padding: util.rem(15px) 0 util.rem(15px);
   }
 }
