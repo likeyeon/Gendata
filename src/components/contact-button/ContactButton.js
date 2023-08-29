@@ -38,7 +38,7 @@ const ContactButton = ({ maxTitle, minTitle, className }) => {
         className={`${styles.ContactButtonTitle} ${className}`}
         subtitle={titelString}
       />
-      <a href="/about">
+      <a href="/contact">
         <button className={styles.ContactButton}>바로 문의하기 &gt;</button>
       </a>
     </div>
