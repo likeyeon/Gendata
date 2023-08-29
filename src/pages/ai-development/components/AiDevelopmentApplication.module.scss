@@ -31,7 +31,8 @@
 }
 
 .applicationContainer {
-  width: 60%;
+  max-width: util.rem(969.87px);
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -58,35 +59,34 @@
 .minCardContainer {
   display: none;
 
-  @media (min-width: 993px) {
+  @media (max-width: 993px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    max-width: util.rem(307.022px);
+    width: 100%;
   }
 }
 
 .character {
-  max-width: util.rem(253px);
   width: 100%;
   // max-height: util.rem(249px);
   height: auto;
   //padding-top: util.rem(45px);
+  //padding: 0 util.rem(65.5px);
+  max-width: util.rem(253px);
 
   @media (min-width: 993px) {
     position: relative;
     left: util.rem(25px);
-    bottom: util.rem(95px);
+    bottom: util.rem(110px);
     height: util.rem(307px);
     padding: 0;
+    max-width: util.rem(311.04px);
+
   }
 }
 
-.hideImg {
-  @media (max-width: util.rem(992px)) {
-    display: none;
-  }
-}
 
 .hiddenText {
   display: none;
