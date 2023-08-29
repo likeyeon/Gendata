@@ -1,4 +1,3 @@
-import { TitleBig } from "../../../../components/common/typo/Typo";
 import styles from "./NewsBoardTitle.module.scss";
 import Title from "../../../../components/title/Title";
 const AiDevlopmentTitle = () => {
