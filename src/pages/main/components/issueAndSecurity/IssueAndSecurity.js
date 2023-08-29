@@ -3,12 +3,12 @@ import { Subtitle, Contents } from "../../../../components/common/typo/Typo";
 import { CommonButton } from "../../../../components/common/button-type/ButtonType";
 
 import ImgArr from "./ImgArr";
-import ClickSlider from "./../../../../components/common/slider/ClickSlider";
+import ClickSlider from "./ClickSlider";
 
 const IssueAndSecurity = () => {
   const data = {
     goToUrl: "/AI-service-paga",
-    content: "자세히 보기→",
+    content: "자세히 보기",
   };
   return (
     <>

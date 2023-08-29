@@ -48,6 +48,7 @@
 
 .minImg {
   display: none;
+  width: 100%;
 
   @media (max-width: util.rem(991px)) {
     display: block;
