@@ -1,0 +1,49 @@
+@use "../../../../../style/util";
+@use "../../../../../style/colors";
+
+.DataProcessWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: util.rem(150px) util.rem(15px);
+  max-width: util.rem(1280px);
+  width: 100%;
+  margin: 0 auto;
+}
+.DataProcessTitle {
+  font-size: util.rem(60px);
+  font-weight: 700;
+}
+.DataProcessDesc {
+  margin-top: util.rem(50px);
+  font-size: util.rem(18px);color: colors.$black_c05;
+  line-height: 1.7;
+}
+.DataProcessImgWrap {
+  width: util.rem(610px);
+  padding: 0 util.rem(75px);
+}
+.DataProcessImgWrap img {
+  max-width: 100%;
+}
+
+@media screen and (max-width:util.rem(991px)) {
+  .DataProcessWrap {
+    justify-content: center;
+    padding-top: util.rem(50px);
+    padding-bottom: util.rem(50px);
+  }
+  .DataProcessTitle {
+    font-size: util.rem(36px);
+    font-weight: 700;
+    text-align: center;
+  }
+  .DataProcessDesc {
+    text-align: center;
+    font-size: util.rem(16px);
+    margin-top: util.rem(30px);
+  }
+  .DataProcessImgWrap {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+@use "../../../../style/util";
+
+.titleContainer {
+  height: util.rem(450px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: util.rem(991px)) {
+    height: util.rem(195px);
+  }
+}
+
+.titlePadding {
+  padding: util.rem(22px) 0;
+
+  @media (max-width: util.rem(991px)) {
+    padding: util.rem(8px) 0;
+
+  }
+}

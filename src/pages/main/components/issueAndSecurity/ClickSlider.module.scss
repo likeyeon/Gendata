@@ -1,0 +1,27 @@
+@use "../../../../style/util";
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slideConataier {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: util.rem(7.5px) 0;
+  padding: 0;
+  height: auto;
+}
+
+
+
+
+
+.slidebtn>button {
+  border: none;
+  background-color: white;
+  width: util.rem(50px);
+}

@@ -1,0 +1,52 @@
+@use "../../../../style/util";
+
+.edcationTitleBackground {
+  background-image: url(../../../../assets/education/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.8);
+  background-position: center center;
+
+  width: 100%;
+  height: util.rem(750px);
+  color: #363636;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: util.rem(991px)) {
+    height: util.rem(300px);
+  }
+}
+
+.edcationTitle {
+  margin-top: util.rem(75px);
+
+  @media (max-width: util.rem(991px)) {
+    margin-top: util.rem(60px);
+  }
+}
+
+.title,
+.titleBlue {
+  font-size: util.rem(64px);
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(36px);
+  }
+}
+
+.titleBlue {
+  color: #021e8c;
+}
+
+.subTitle,
+.edcationSubtitle {
+  font-size: util.rem(36px);
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(24px);
+  }
+}

@@ -1,0 +1,74 @@
+@use "../../../style/util";
+@use "../../../style/colors";
+
+.TabOuterWrap {
+  background-color: colors.$gray_b01;
+  padding: util.rem(150px) 0;
+}
+.TabInnerWrap {
+  width: util.rem(1280px);
+  margin: 0 auto;
+}
+
+.TabTitle {
+  font-size: util.rem(50px);
+  font-weight: 700;
+  line-height: util.rem(80px);
+  margin-bottom: util.rem(60px);
+  > span {
+    color: colors.$blue_c01; 
+  }
+  > br ~ span {
+    color: colors.$black_c01; 
+  }
+}
+
+.TabMenu {
+  display: flex;
+  margin: util.rem(60px) 0;
+  font-weight: 600;
+  font-size: util.rem(18px);
+  color: colors.$black_c02;
+
+  > .TabItem {
+      padding: util.rem(23px) util.rem(30px);
+      border-radius: 50px;
+    }
+  >  .TabItem.Focused {
+      background-color: colors.$gray_b02;
+    }
+}
+
+@media screen and (max-width:util.rem(991px)) {
+  .TabOuterWrap {
+    padding: util.rem(90px) 0 util.rem(80px);
+  }
+  .TabInnerWrap {
+    max-width: util.rem(343px);
+  }
+  .TabTitle {
+    font-size: util.rem(33px);
+    line-height: util.rem(50px);
+    display: flex;
+    flex-wrap: wrap;
+    width: util.rem(300px);
+    margin-bottom: util.rem(30px);
+  }
+  .TabMenu {
+    font-size: util.rem(16px);
+    letter-spacing: util.rem(-0.5px);
+    margin-top: 0;
+    margin-bottom: util.rem(15px);
+
+    > .TabItem {
+      padding: util.rem(16px) util.rem(12px);
+      }
+    >  .TabItem.Focused {
+        color : colors.$black_c01;
+        background-color: colors.$gray_b01;
+      }
+  }
+}
+
+
+

@@ -1,0 +1,53 @@
+@use "../../../style/colors";
+@use "../../../style/util";
+
+.main {
+  padding-bottom: util.rem(140px);
+}
+
+.blank {
+  display: block;
+  height: util.rem(110px);
+  margin: util.rem(15px) 0;
+}
+
+.banner_wrapper {
+  background-color: #001cbb;
+  border-radius: 20px;
+  padding: util.rem(80px);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+
+  font-size: util.rem(35px);
+
+  & > p {
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+  }
+
+  & > img {
+    width: util.rem(220px);
+    height: util.rem(288px);
+    margin-top: util.rem(-190px);
+  }
+}
+
+@media screen and (max-width: util.rem(991px)) {
+  .banner {
+    flex-direction: column-reverse;
+    font-size: util.rem(18px);
+    padding: util.rem(30px);
+
+    & > p {
+      text-align: center;
+      margin-top: util.rem(24px);
+    }
+  }
+
+  .banner_wrapper {
+    padding: util.rem(25px) 0 !important;
+  }
+}

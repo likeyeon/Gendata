@@ -1,0 +1,38 @@
+@use "../../../style/util";
+
+.titleBig {
+  font-size: util.rem(70px);
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(45px);
+  }
+}
+
+.subtitle {
+  font-size: util.rem(45px);
+  font-weight: 700;
+  line-height: 2;
+  text-align: center;
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(33px);
+  }
+}
+
+.contents {
+  font-size: util.rem(20px);
+  line-height: 2;
+  text-align: center;
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(15px);
+    line-height: 1.5;
+  }
+}
+
+strong {
+  font-weight: 700;
+}

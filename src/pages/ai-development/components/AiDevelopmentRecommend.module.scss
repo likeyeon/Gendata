@@ -1,0 +1,119 @@
+@use "../../../style/util";
+
+.recommendBackground {
+  width: 100%;
+  max-height: util.rem(800px);
+  height: fit-content;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: util.rem(110px) util.rem(75px);
+  margin: 0 auto;
+
+  @media (max-width:util.rem(991px)) {
+    padding: util.rem(54px) util.rem(60px);
+
+  }
+}
+
+.recommendContent {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  width: 100%;
+  max-width: util.rem(1036.670px);
+  margin-top: util.rem(110px);
+
+  @media (max-width: util.rem(991px)) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: top 0;
+  }
+
+}
+
+.recommendContentImges {
+  max-width: util.rem(412px);
+  width: 100%;
+  height: auto;
+  padding: 0;
+
+  @media (max-width: util.rem(991px)) {
+    width: 100%;
+    max-width: util.rem(312px);
+  }
+}
+
+.recommendContentText {
+  margin-bottom: util.rem(60px);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: util.rem(991px)) {
+    width: auto;
+    max-height: util.rem(250px);
+    height: 100%;
+    margin-bottom: util.rem(30px);
+
+  }
+}
+
+.recommendContentText>.recommendContentTitle {
+  text-align: left;
+  white-space: nowrap;
+  line-height: 1.5;
+  font-size: util.rem(50px);
+  padding-bottom: util.rem(48px);
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(24px);
+    text-align: center;
+  }
+}
+
+.recommendContentDescription {
+  text-align: left;
+  white-space: nowrap;
+  font-size: util.rem(18px);
+  margin: 0;
+  padding: util.rem(4px) 0;
+
+  @media (max-width: util.rem(991px)) {
+    font-size: util.rem(15px);
+    text-align: center;
+  }
+}
+
+.recommendContentCardsTable {
+  width: 100%;
+  max-width: util.rem(1036.670px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: util.rem(110px);
+
+  @media (max-width: util.rem(991px)) {
+    display: none;
+    margin-bottom: util.rem(62.99px);
+  }
+}
+
+.recommendContentImgesCards {
+  max-width: util.rem(485px);
+  width: 50%;
+  max-height: util.rem(229px);
+  height: 100%;
+  margin: 0;
+
+  @media (max-width: util.rem(991px)) {
+    margin: util.rem(15px) 0;
+    max-width: util.rem(312px);
+
+    max-height: util.rem(300px);
+  }
+}

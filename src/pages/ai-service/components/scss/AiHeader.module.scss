@@ -1,0 +1,60 @@
+@use "util";
+
+.main {
+  background-color: #000000;
+}
+
+.section {
+  width: 100%;
+
+  .container {
+    display: flex;
+    width: 100%;
+    max-width: util.rem(1280px);
+    padding: util.rem(15px) util.rem(15px);
+    flex-wrap: wrap;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      max-width: util.rem(420px);
+      min-width: util.rem(340px);
+      min-height: util.rem(339.58px);
+      padding: util.rem(5px);
+      flex: 1;
+
+      img {
+        display: flex;
+        width: 100%;
+        min-height: util.rem(252px);
+      }
+
+      .text {
+        display: flex;
+        width: 100%;
+        min-height: util.rem(77.58px);
+        padding: util.rem(15px) util.rem(0px);
+        text-align: center;
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          font-family: "Spoqa Han Sans Neo", "sans-serif";
+          font-size: util.rem(22px);
+          color: #ffffff;
+          text-align: center;
+          line-height: 1.6;
+
+          .body {
+            display: flex;
+            font-family: "Spoqa Han Sans Neo", "sans-serif";
+            font-size: util.rem(14px);
+            color: #999;
+            text-align: center;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}

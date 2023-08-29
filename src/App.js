@@ -1,8 +1,13 @@
-import "./App.css";
-import Home from "./pages/home/Home";
-
-function App() {
-  return <Home />;
-}
+import Gnb from "./components/gnb/Gnb";
+import Footer from "./components/footer/Footer";
+const App = ({ component }) => {
+  return (
+    <>
+      <Gnb />
+      <div className="content">{component}</div>
+      <Footer />
+    </>
+  );
+};
 
 export default App;

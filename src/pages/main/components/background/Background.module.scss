@@ -1,0 +1,19 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.section {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+  background: url("../../../../assets/main/back.jpg") no-repeat center center;
+  background-size: cover;
+  top: util.rem(-116px);
+}
+
+@media screen and (max-width: util.rem(991px)){
+  .section {
+    min-height: 100%;
+    height: util.rem(850px);
+    top: util.rem(-84.5px);
+  }
+}

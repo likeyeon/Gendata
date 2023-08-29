@@ -1,0 +1,74 @@
+@use "../../../style/util";
+@use "../../../style/colors";
+
+.TabContentWrap {
+  min-height: util.rem(493px);
+
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-areas: 
+    "TabContentTitle TabContentImgWrap"
+    "TabContentDesc TabContentImgWrap"
+    "TabBtn TabContentImgWrap";
+  
+  > .TabContentTitle{
+      grid-area: TabContentTitle; 
+      font-size: util.rem(40px); 
+      font-weight: 600; 
+      padding-bottom: util.rem(40px); 
+      color: colors.$black_c01
+    }
+  > .TabContentDesc{
+      grid-area: TabContentDesc;
+      color: colors.$black_c03;
+      font-size: util.rem(18px);
+      line-height: 2;
+      margin-bottom: util.rem(3px)
+    }
+  > .TabBtn{
+      grid-area: TabBtn;
+    }
+  > .TabContentImgWrap{
+      grid-area: TabContentImgWrap; 
+      width: util.rem(265px)
+    }
+  > .TabContentImgWrap img {
+      max-width: 100%;
+    }
+
+  max-width: util.rem(1093px);
+  padding: util.rem(114px) util.rem(85px);
+  background-color: colors.$white_c01;
+  border-radius: 15px;
+}
+
+@media screen and (max-width:util.rem(991px)) {
+  .TabContentWrap {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "TabContentImgWrap"
+    "TabContentTitle"
+    "TabContentDesc"
+    "TabBtn";
+  }
+  .TabContentWrap {
+    padding: util.rem(30px) util.rem(30px) util.rem(36px);
+    min-height: util.rem(1px);
+
+    > .TabContentTitle{
+        font-size: util.rem(30px); 
+        padding-bottom: util.rem(30px); 
+        text-align: center;
+        margin-top: util.rem(33px);
+      }
+    > .TabContentDesc{
+        font-size: util.rem(13px);
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    > .TabContentImgWrap{
+        width: 100%;
+      }
+  }
+}

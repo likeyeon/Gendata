@@ -1,0 +1,56 @@
+@use "../../style/util";
+
+footer {
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  right: 0;
+
+  //width: 100%;
+  height: fit-content;
+  background-color: #f0f0f0;
+  color: #8b8b8b;
+  padding: util.rem(40px) 0;
+  font-size: util.rem(15px);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  min-height: util.rem(30px);
+  max-width: util.rem(1280px);
+  padding: util.rem(13px) util.rem(15px);
+  margin: 0 auto;
+
+  @media (max-width: util.rem(991px)) {
+    margin: 0;
+  }
+}
+
+.logo {
+  width: util.rem(252px);
+  padding: util.rem(5px) 0;
+  margin: 0;
+  margin-bottom: util.rem(30px);
+}
+
+.companyInfo {
+  line-height: 2;
+  padding: 0;
+}
+
+.line {
+  width: 100%;
+  border: util.rem(1px) solid #E0E0E0;
+  margin: util.rem(20px) 0;
+  padding: 0 util.rem(15px);
+}
+
+
+.copyright {
+  padding: 0 util.rem(15px);
+  font-size: 15px;
+}

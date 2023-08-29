@@ -1,0 +1,155 @@
+@use "../../style/util";
+
+.strength {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #f0f0f0, #ffffff);
+  height: util.rem(1163px);
+
+  @media (max-width: util.rem(991px)) {
+    height: util.rem(2354px);
+
+  }
+
+  .strengthTitle {
+    width: 100%;
+    margin: 0;
+    font-size: util.rem(60px);
+    font-weight: 700;
+    line-height: 3;
+
+    >span {
+      color: #1c2660;
+    }
+
+    @media (max-width: util.rem(991px)) {
+      line-height: 6;
+      font-size: util.rem(33px);
+    }
+  }
+
+  .strengthTable {
+    width: 100%;
+    max-width: 993px;
+    //height: util.rem(600px);
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: util.rem(991px)) {
+      max-height: util.rem(1978px);
+    }
+
+  }
+
+  .strengthTableItems {
+    height: util.rem(160px);
+
+    // background-color: yellow;
+    // border: 1px solid red;
+    // box-sizing: border-box;
+    flex: none;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    @media (max-width: util.rem(991px)) {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      height: util.rem(282px);
+    }
+  }
+
+  .strengthItembox {
+    width: 100%;
+    height: 100%;
+    //background-color: orange;
+
+    display: flex;
+    align-items: center;
+
+    @media (max-width: util.rem(991px)) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+
+  .strengthTableContent {
+    width: 100%;
+    height: util.rem(100px);
+    // background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 util.rem(15px);
+
+    @media (max-width: util.rem(991px)) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: util.rem(152px);
+
+    }
+  }
+
+  // .moveLeft {
+  //   position: relative;
+  //   left: 100px;
+  // }
+
+  .strengthTableImge {
+    max-width: util.rem(77px);
+    width: 100%;
+    height: auto;
+    //  background-color: greenyellow;
+
+
+    //height: util.rem(100px);
+    //padding: 0 util.rem(15px);
+    margin: auto 0;
+
+
+
+  }
+
+  .strengthTableTitle {
+    // white-space: nowrap;
+    font-size: util.rem(36px);
+    margin: 0;
+    line-height: 1;
+
+    @media (max-width: util.rem(991px)) {
+      font-size: util.rem(30px);
+      line-height: 1.5;
+
+    }
+
+  }
+
+  .strengthTableText {
+    //white-space: nowrap;
+    text-align: left;
+    font-size: util.rem(18px);
+    line-height: 1.2;
+
+    @media (max-width: util.rem(991px)) {
+      text-align: center;
+      font-size: util.rem(15px);
+      font-weight: 500px;
+      line-height: 1.5;
+    }
+  }
+}

@@ -1,0 +1,71 @@
+@use "../../style/colors";
+@use "../../style/util";
+
+.modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 17000;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal_dialog {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  margin: util.rem(80px) auto;
+  background-color: white;
+}
+
+.modal_content {
+  word-wrap: break-word;
+  border-radius: util.rem(3px);
+  box-shadow: 0 util.rem(5px) util.rem(15px) rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.modal_header {
+  padding: util.rem(24px);
+}
+.modal_title {
+  font-size: util.rem(18px);
+  font-weight: 500;
+  float: left;
+}
+
+.x_btn {
+  border: none;
+  background-color: transparent;
+  font-size: util.rem(18px);
+  line-height: 1;
+  color: #212121;
+  margin-top: util.rem(4px);
+  float: right;
+}
+
+.modal_body {
+  position: relative;
+  padding: util.rem(24px);
+  font-size: util.rem(15px);
+  line-height: 1.6;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (min-width: util.rem(601px)) {
+  .modal_dialog {
+    width: util.rem(600px);
+  }
+}
+
+@media screen and (max-width: util.rem(600px)) {
+  .modal_dialog {
+    width: 100%;
+  }
+}

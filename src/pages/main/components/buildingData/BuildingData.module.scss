@@ -1,0 +1,19 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.main {
+  margin: util.rem(30px) 0;
+  background-color: #f5f6f8;
+}
+// .mainTab {
+//   padding-left: util.rem(80px);
+// }
+
+@media screen and (max-width:util.rem(991px)){
+  .main {
+    margin-top: util.rem(50px);
+  }
+  .video {
+    display: none;
+  }
+}
