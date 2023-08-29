@@ -7,11 +7,11 @@ import Contact from "./components/Contact";
 export default function Education() {
   return (
     <>
-      <EducitionTitle />
+      {/* <EducitionTitle />
       <EducationIntro />
       <EducationSystem />
       <EducationReview />
-      <Contact />
+      <Contact /> */}
     </>
   );
 }
