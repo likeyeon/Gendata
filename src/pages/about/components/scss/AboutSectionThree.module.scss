@@ -1,0 +1,32 @@
+@use "../../../../style/util";
+@use "../../../../style/colors";
+
+.main {
+  background-color: #f2f2f2;
+  padding: util.rem(180px) 0;
+}
+
+.table {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  height: 100%;
+}
+
+.table_row {
+  display: table-row;
+  width: 100%;
+  height: auto;
+}
+
+.table_cell {
+  display: table-cell;
+  padding: util.rem(7.5px);
+  width: 100%;
+  height: auto;
+}
+
+.item {
+  width: 100%;
+  height: 100%;
+}
