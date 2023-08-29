@@ -1,0 +1,66 @@
+@use "../../../../style/util";
+@use "../../../../style/colors";
+
+.contents_wrap {
+  display: flex;
+  text-align: left;
+}
+
+.title_table {
+  flex-grow: 6;
+  padding: util.rem(30px) util.rem(100px);
+}
+
+.text_table {
+  flex-grow: 5;
+  word-wrap: break-word;
+
+  font-size: util.rem(14px);
+  line-height: 1.8;
+
+  p:last-child {
+    text-align: right;
+  }
+}
+
+.title_wrap {
+  font-size: util.rem(18px);
+  line-height: 1.5;
+  color: #172353;
+}
+
+.subtitle_wrap {
+  p {
+    white-space: nowrap;
+
+    span {
+      line-height: 1.6;
+    }
+  }
+
+  p:nth-child(2) {
+    color: #021e8c;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .contents_wrap {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text_table {
+    padding: util.rem(10px) 0;
+    text-align: left;
+
+    p:last-child {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .title_table {
+    padding: 0 0 util.rem(20px) 0;
+  }
+}
