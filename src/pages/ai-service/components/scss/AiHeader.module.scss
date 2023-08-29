@@ -1,46 +1,49 @@
 @use 'util';
 
-.container {
+.section {
 
   width: 100%;
-  height: util.rem(369.58px);
   background-color: #000000;
+ 
 
-  .item{
-    width: util.rem(1280px);
-    height: util.rem(369.58px);
+  .container{
+
+    display: flex;
+    width: 100%;
+    max-width: util.rem(1280px);
     padding: util.rem(15px) util.rem(15px);
-    margin: 0 auto;
+    flex-wrap: wrap;
 
-    .table{
+    .item {
 
-      display: table-cell;
-      width: util.rem(1260px);
-      height: util.rem(339.58px);
-      margin: 0 auto;
-  
-
-    .box {
-
-      display: table;
-      width: util.rem(420px);
-      height: util.rem(339.58px);
+      display: flex;
+      flex-direction: column;
+      max-width: util.rem(420px);
+      min-width: util.rem(340px);
+      min-height: util.rem(339.58px);
       padding: util.rem(5px);
+      flex: 1;
+     
 
       img {
 
-        width: util.rem(410px);
+        display: flex;
+        width: 100%;
         min-height: util.rem(252px);
 
       }
 
       .text {
-        width: util.rem(410px);
+        display: flex;
+        width: 100%;
         min-height: util.rem(77.58px);
         padding: util.rem(15px) util.rem(0px);
+        text-align: center;
 
         .title {
           
+          display: flex;
+          flex-direction: column;
           font-family: 'Spoqa Han Sans Neo', 'sans-serif';
           font-size: util.rem(22px);
           color: #ffffff;
@@ -49,6 +52,7 @@
 
           .body{
 
+            display: flex;
             font-family: 'Spoqa Han Sans Neo', 'sans-serif';
             font-size: util.rem(14px);
             color: #999;
@@ -60,7 +64,8 @@
           }
         }
 
-      }
     }
   }
 }
+
+
