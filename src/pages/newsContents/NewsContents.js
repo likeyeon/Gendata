@@ -36,7 +36,9 @@ const NewsContents = () => {
   }
   return (
     <div className={styles.newsContent}>
-      <NewsBoardTitle />
+      <div className={styles.newsBoardTitle}>
+        <NewsBoardTitle />
+      </div>
       <div className={styles.contentsContainer}>
         <div className={styles.contentMain}>
           <div

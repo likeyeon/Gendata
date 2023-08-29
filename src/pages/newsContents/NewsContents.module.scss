@@ -1,9 +1,9 @@
 @use "../../style/util";
 
-// .newsContent {
-
+// .newsBoardTitle {
 //   width: 100%;
-//   margin: 0 auto;
+//   width: util.rem(450px);
+//   height: fit-content;
 // }
 
 .contentsContainer {
@@ -12,7 +12,7 @@
   max-width: 1250px;
   width: 100%;
   margin: util.rem(15px) auto; //
-  padding: 0 30px;
+  padding: 0 util.rem(30px);
 
   @media (max-width: util.rem(992px)) {
     padding: 0 util.rem(15px);
@@ -35,7 +35,7 @@
   font-weight: 400;
   text-align: center;
   color: rgb(54 54 54);
-  margin-bottom: util.rem(15px);
+  margin-bottom: util.rem(30px);
 
   @media (max-width: util.rem(992px)) {
     border-bottom: solid util.rem(1px) #e5e7eb;
@@ -62,9 +62,9 @@
 .contents {
   width: 100%;
 
-  padding: 22px 0;
-  line-height: 24px;
-  font-size: 15px;
+  padding: 15px 0;
+  line-height: util.rem(24px);
+  font-size: util.rem(15px);
   font-style: normal;
   font-weight: 400;
   color: rgb(54 54 54);
@@ -89,12 +89,13 @@
 .pagenation {
   width: 100%;
   height: auto;
-  padding: util.rem(12px) util.rem(12px);
+  padding: util.rem(14px) util.rem(12px);
   background-color: white;
   border: none;
   border-bottom: solid util.rem(1px) #e5e7eb;
   text-align: left;
-  font-size: 14px;
+  font-size: util.rem(14px);
+
 }
 
 .pagenation:hover {
