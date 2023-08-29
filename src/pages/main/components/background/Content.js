@@ -14,25 +14,22 @@ const Content = () => {
               <strong>AI 모델 개발</strong> 그리고 <strong>데이터 구축</strong>
             </p>
           </div>
-          <div className={styles.data_table}>
-            <hr />
-            <div className={styles.center_wrap}>
-              <div className={styles.data_text_wrap}>
-                <div className={styles.data_wrap}>
-                  <p>100건+</p>
-                  <span>데이터 가공</span>
-                </div>
-                <div className={styles.data_wrap}>
-                  <p>50건+</p>
-                  <span>AI 응용 소프트웨어 개발</span>
-                </div>
-                <div className={styles.data_wrap}>
-                  <p>9건+</p>
-                  <span>품질 검증</span>
-                </div>
-              </div>
+          <hr />
+          <div className={styles.data_text_wrap}>
+            <div className={styles.data_wrap}>
+              <span>100건+</span>
+              <span>데이터 가공</span>
+            </div>
+            <div className={styles.data_wrap}>
+              <span>50건+</span>
+              <span>AI 응용 소프트웨어 개발</span>
+            </div>
+            <div className={styles.data_wrap}>
+              <span>9건+</span>
+              <span>품질 검증</span>
             </div>
           </div>
+          <p className={styles.data_year}>2023.05 기준</p>
         </div>
       </Inside>
     </main>

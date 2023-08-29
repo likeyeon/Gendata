@@ -1,10 +1,9 @@
 import styles from './scss/AiHeader.module.scss';
 
 const AiHeader = () => (
-  <div className={styles.container} >
-    <div className={styles.item}>
-      <div className={styles.table}>
-        <a className={styles.box} href='https://aromas.gendata.cloud/'>
+  <section className={styles.section} >
+    <div className={styles.container}>
+        <a className={styles.item} href='https://aromas.gendata.cloud/'>
           <img src='https://cdn.imweb.me/thumbnail/20230823/0a8d1ac4e63a4.png'/>
           <div className={styles.text}>
             <p className={styles.title}>
@@ -13,9 +12,17 @@ const AiHeader = () => (
             </p>
           </div>
         </a>
-      </div>
+        <a className={styles.item} href='https://www.semoai.com/'>
+          <img src='https://cdn.imweb.me/thumbnail/20230828/9a269dd3872c8.jpg'/>
+          <div className={styles.text}>
+            <p className={styles.title}>
+              세상 모든 기업을 위한 AI 비즈니스 서비스
+              <span class={styles.body}>AI 도입 및 프로젝트 구체화 → AI 전문 기업 매칭 및 프로젝트 관리</span>
+            </p>
+          </div>
+        </a>
     </div>
-  </div>
+  </section>
 );
 
 export default AiHeader;

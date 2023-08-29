@@ -1,6 +1,7 @@
 @use "../../style/util";
 
 .strength {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +15,7 @@
   }
 
   .strengthTitle {
+    width: 100%;
     margin: 0;
     font-size: util.rem(60px);
     font-weight: 700;
@@ -30,14 +32,15 @@
   }
 
   .strengthTable {
-    width: 993px;
-    height: util.rem(600px);
+    width: 100%;
+    max-width: 993px;
+    //height: util.rem(600px);
+    height: auto;
     display: flex;
     flex-wrap: wrap;
 
     @media (max-width: util.rem(992px)) {
-      height: util.rem(1978px);
-
+      max-height: util.rem(1978px);
     }
 
   }
@@ -54,6 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 
     @media (max-width: util.rem(992px)) {
       display: flex;
@@ -89,6 +93,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    padding: 0 util.rem(15px);
 
     @media (max-width: util.rem(992px)) {
       display: flex;
@@ -106,22 +111,22 @@
   // }
 
   .strengthTableImge {
+    max-width: util.rem(77px);
     width: 100%;
-    height: 100%;
+    height: auto;
     //  background-color: greenyellow;
 
 
-    width: util.rem(77px);
-    height: util.rem(100px);
-    padding: 0 util.rem(15px);
-    margin: util.rem(15px);
+    //height: util.rem(100px);
+    //padding: 0 util.rem(15px);
+    margin: auto 0;
 
 
 
   }
 
   .strengthTableTitle {
-    white-space: nowrap;
+    // white-space: nowrap;
     font-size: util.rem(36px);
     margin: 0;
     line-height: 1;
@@ -135,7 +140,7 @@
   }
 
   .strengthTableText {
-    white-space: nowrap;
+    //white-space: nowrap;
     text-align: left;
     font-size: util.rem(18px);
     line-height: 1.2;

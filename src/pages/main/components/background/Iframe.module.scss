@@ -2,19 +2,16 @@
 @use "../../../../style/util";
 
 .iframe_container {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  margin: 0 auto;
 }
-
 .iframe_wrapper {
   position: relative;
   max-width: 100%;
   height: 0;
-  overflow: hidden;
   padding-top: 56.25%;
+  overflow: hidden;
 }
-
 .iframe {
   position: absolute;
   width: 100%;
@@ -23,6 +20,13 @@
   left: 0;
 }
 
+@media screen and (max-width: util.rem(991px)) {
+  .iframe_wrapper {
+    padding-top: 100vh;
+  }
+}
+
+// ------------------------------
 // @media screen and (max-width: util.rem(991px)) {
 //   .iframe_container {
 //     width: 100vw;

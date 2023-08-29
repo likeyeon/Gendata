@@ -1,0 +1,23 @@
+@use "../../../style/util";
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(util.rem(20px));
+    filter: blur(util.rem(4px));
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.fadeInUp {
+  animation: fade-in 500ms ease-in-out;
+
+  @media (max-width: util.rem(992px)) {
+    animation: none !important;
+  }
+}
