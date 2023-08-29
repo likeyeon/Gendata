@@ -13,7 +13,7 @@
   margin: 0 auto;
   padding: 85px 0;
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     //margin: util.rem(100px) util.rem(15px);
     // height: util.rem(1116px);
 
@@ -43,7 +43,7 @@
   top: util.rem(25px);
   ;
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     display: none;
   }
 }
@@ -91,7 +91,7 @@
 .hiddenText {
   display: none;
 
-  @media (max-width: util.rem(992px)) {
+  @media (max-width: util.rem(991px)) {
     display: block;
     padding: util.rem(45px) 0;
     color: #555555;
