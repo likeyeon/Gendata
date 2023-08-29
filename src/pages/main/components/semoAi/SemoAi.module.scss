@@ -1,0 +1,23 @@
+@use "../../../../style/colors";
+@use "../../../../style/util";
+
+.contents_wrap {
+  width: 100%;
+  padding: util.rem(200px) 0 util.rem(150px);
+  margin-top: util.rem(90px);
+  background-color: colors.$gray_b01;
+}
+.mobile_contents {
+  display: none;
+}
+@media screen and (max-width:util.rem(991px)){
+  .contents_wrap {
+    padding: util.rem(100px) 0 util.rem(100px);
+  }
+  .mobile_contents {
+    display: block;
+  }
+  .pc_contents {
+    display: none;
+  }
+}
