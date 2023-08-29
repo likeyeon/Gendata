@@ -1,5 +1,8 @@
-ul,
-li {
+@use "../../../../style/util";
+@use "../../../../style/colors";
+
+
+ul, li {
   list-style: none;
 }
 
@@ -15,13 +18,12 @@ li {
   display: flex;
   flex-wrap: nowrap;
 }
-
 .slide {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
   position: relative;
-  padding: 40px 0;
+  padding: util.rem(40px) 0;
 
   &::before {
     content: "";
@@ -42,8 +44,6 @@ li {
   &.clone {
     animation: linear infinite infiniteAnimation2;
   }
-
-
 }
 
 li {
@@ -52,9 +52,24 @@ li {
   transform: scale(1);
 }
 
+// 각 이미지를 담고 있는 .item의 스타일 추가로 지정
+.item {
+  width: util.rem(186px);
+  height: util.rem(140px);
+  padding: util.rem(5px);
+  margin: 0 util.rem(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .item>img {
-  width: 200px;
-  height: 200px;
+  // .item > img의 크기는 없애고 
+  // max-width: 100%; max-height: 100%; 추가
+  // width: 200px;
+  // height: 200px;
+  max-width: 100%;
+  max-height: 100%;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -86,5 +101,16 @@ li {
 
   100% {
     transform: translateX(-200%);
+  }
+}
+
+@media screen and (max-width:util.rem(991px)){
+  .slide {
+    padding-top: util.rem(20px)
+  }
+  .item {
+    width: util.rem(102px);
+    height: util.rem(77px);
+    margin: 0 util.rem(5px);
   }
 }

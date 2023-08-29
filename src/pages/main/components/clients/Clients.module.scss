@@ -1,2 +1,13 @@
 @use "../../../../style/colors";
 @use "../../../../style/util";
+
+
+.client {
+  margin-top: util.rem(-45px);
+}
+
+@media screen and (max-width: util.rem(991px)) {
+  .client {
+    margin-top: 0;
+  }
+}

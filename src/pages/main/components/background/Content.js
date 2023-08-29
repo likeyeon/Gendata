@@ -8,7 +8,7 @@ const Content = () => {
         <div className={styles.content_wrap}>
           <div className={styles.title}>
             <p>
-              <strong>누구에게나 열려있는 AI</strong>
+              <strong><span>누구에게나 열려있는</span> AI</strong>
             </p>
             <p>
               <strong>AI 모델 개발</strong> 그리고 <strong>데이터 구축</strong>

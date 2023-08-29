@@ -12,10 +12,10 @@ import AutoSlider from "./AutoSlider";
 
 const Clients = () => {
   return (
-    <main>
+    <main className={styles.client}>
       <Inside>
         <ClientsTitle />
-        <AutoSlider ImgArr={ClientsArr} animationDuration="20s" />
+        <AutoSlider ImgArr={ClientsArr} animationDuration="300s" />
         <AiTitle />
       </Inside>
     </main>

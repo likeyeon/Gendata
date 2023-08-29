@@ -14,9 +14,18 @@ a {
 }
 .HoverButtonWrap {
   margin-top: util.rem(50px);
+  @media screen and (max-width:util.rem(991px)){
+    display: flex;
+    justify-content: center;
+    margin-top: util.rem(40px);
+  }
 }
 .HoverButton {
   padding: util.rem(16px) util.rem(30px);
+  @media screen and (max-width:util.rem(991px)){
+    padding: util.rem(14px) util.rem(30px);
+    font-size: util.rem(14px);
+  }
 }
 .HoverButton:hover {
   color: inherit;
@@ -28,3 +37,4 @@ a {
   padding: util.rem(17px) util.rem(40px);
   font-weight: 700;
 }
+

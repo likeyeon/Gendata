@@ -40,6 +40,9 @@
 }
 
 @media screen and (max-width:util.rem(991px)) {
+  .TabOuterWrap {
+    padding: util.rem(90px) 0 util.rem(80px);
+  }
   .TabInnerWrap {
     max-width: util.rem(343px);
   }
