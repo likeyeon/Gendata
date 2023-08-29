@@ -11,8 +11,9 @@
   grid-template-columns: util.rem(170px) auto 12%;
   max-width: util.rem(1100px);
   width: 100%;
-  margin: 0 util.rem(7.5px);
-  border-bottom: util.rem(1px) solid #363636;
+  padding: util.rem(5.1px) 0;
+
+  border-bottom: util.rem(1px) solid #dfdfdf;
   font-size: util.rem(15px);
   font-weight: 400;
 
@@ -27,6 +28,10 @@
   width: 100%;
   padding: util.rem(20px) util.rem(7px);
   font-weight: 400;
+
+  @media (max-width: util.rem(992px)) {
+    padding: util.rem(12.15px) util.rem(7px);
+  }
 }
 
 .newsNumber,
@@ -45,7 +50,6 @@
 
   @media (max-width: util.rem(992px)) {
     margin: 0 util.rem(7px);
-
   }
 }
 
@@ -56,8 +60,14 @@
 
 .pagination {
   width: 100%;
-  padding: util.rem(39px) 0 util.rem(180px) 0;
+  padding: util.rem(47px) 0 util.rem(180px) 0;
   margin: util.rem(20px) 0;
+
+  @media (max-width: util.rem(992px)) {
+    margin: 0 util.rem(7px);
+    padding: util.rem(30px) 0 util.rem(110px) 0;
+
+  }
 }
 
 .mouseEvent {

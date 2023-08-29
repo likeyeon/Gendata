@@ -7,6 +7,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media (max-width: util.rem(992px)) {
+    padding: 0 util.rem(15px);
+
+  }
 }
 
 .newsBoard {
@@ -28,7 +33,8 @@
   display: grid;
   grid-template-columns: util.rem(170px) auto 12%;
   width: 100%;
-  border-bottom: util.rem(1px) solid #363636;
+  border-bottom: util.rem(1px) solid #dfdfdf;
+  padding: util.rem(5.5px) 0;
 }
 
 .newsNumber,
