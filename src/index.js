@@ -20,7 +20,7 @@ import Education from "./pages/education/Education";
 import News from "./pages/news/News";
 import Contact from "./pages/contact/Contact";
 import AiService from "./pages/ai-service/AiService";
-import ProjectDevelop  from "./pages/project-develop/Project";
+import ProjectDevelop from "./pages/project-develop/Project";
 import NewsContents from "./pages/newsContents/NewsContents.js"; //
 import Government from "./pages/government/Government";
 import DataDealing from "./pages/data-dealing/DataDealing";
@@ -34,21 +34,6 @@ const router = createBrowserRouter([
     path: "/introduce",
     element: <App component={<About />} />,
   },
-  /* 데이터 가공 */
-  // {
-  //   path: "/gendata-service-labeling",
-  //   element: <App component={< />} />,
-  // },
-  /* 원천 데이터 수집 */
-  // {
-  //   path: "/data-collection",
-  //   element: <App component={< />} />,
-  // },
-  /* 품질 및 보안 */
-  // {
-  //   path: "/inhouse-operation",
-  //   element: <App component={< />} />,
-  // },
   {
     path: "/government-support-project",
     element: <App component={<Government />} />,
@@ -80,17 +65,12 @@ const router = createBrowserRouter([
 
   {
     path: "AI-data-project",
-    element: <App component={<ProjectDevelop/>} />,
+    element: <App component={<ProjectDevelop />} />,
   },
   {
     path: "AI-service-paga",
-    element: <App component={<AiService/>} />,
+    element: <App component={<AiService />} />,
   },
-  /* 소식 */
-  // {
-  //   path: "/news",
-  //   element: <App component={< />} />,
-  // },
   {
     path: "/news",
     element: <App component={<News />} />,
@@ -103,8 +83,6 @@ const router = createBrowserRouter([
     path: "/contact",
     element: <App component={<Contact />} />,
   },
-
-  // 데이터 가공 > AI 데이터 가공
   {
     path: "/data-process-3d",
     element: <App component={<DataProcess3d />} />,
@@ -126,11 +104,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-    
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
