@@ -1,61 +1,79 @@
-@use 'util';
+@use "../../../../style/colors";
+@use "../../../../style/util";
 
-.container{
-
+.banner_pc {
   width: 100%;
   height: util.rem(487.6px);
-  background-image: url('https://cdn.imweb.me/thumbnail/20230702/ce3ebb23a35a5.jpg');
+  background-image: url("https://cdn.imweb.me/thumbnail/20230702/ce3ebb23a35a5.jpg");
   background-position: 50% 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: util.rem(60px);
 
-  .space{
-    width: util.rem(1280px);
-    height: util.rem(94px);
-    padding: util.rem(0px) util.rem(15px);
-    margin: 0 auto;
-  }
+  .logo_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 
-  .gen{
-
-    width: util.rem(1280px);
-    height: util.rem(98px);
-    padding: util.rem(15px) util.rem(508px);
-    margin: 0 auto;
-
-    img{
-
+    img {
       width: util.rem(264px);
       height: util.rem(68px);
       margin: 0 auto;
-      
     }
-    
   }
 
-  .bar{
-    width: util.rem(1280px);
-    height: util.rem(30px);
-    padding: util.rem(0px) util.rem(15px);
-    margin: 0 auto;
-  }
-
-  .korea{
-
-    width: util.rem(1280px);
-    height: util.rem(170.6px);
+  .text_wrap {
     padding: util.rem(15px) util.rem(15px);
-    margin: 0 auto;
     text-align: center;
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif';
     color: rgb(54, 54, 54);
     font-size: util.rem(60px);
     font-weight: 700;
     line-height: 1.1;
+  }
+}
 
+.banner_mobile {
+  display: none;
+}
 
+@media screen and (max-width: util.rem(991px)) {
+  .banner_pc {
+    display: none;
   }
 
+  .banner_mobile {
+    width: 100%;
+    height: util.rem(295.6px);
+    background-image: url("https://cdn.imweb.me/thumbnail/20230413/3d744fe4c2d72.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: util.rem(20px);
 
-  
+    .logo_wrap {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img {
+        width: util.rem(201px);
+        margin: 0 auto;
+      }
+    }
+
+    .text_wrap {
+      padding: util.rem(15px) util.rem(15px);
+      text-align: center;
+      color: colors.$white_c01;
+      font-size: util.rem(22px);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+  }
 }

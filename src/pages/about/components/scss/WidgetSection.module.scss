@@ -1,0 +1,26 @@
+@use "../../../../style/util";
+@use "../../../../style/colors";
+
+.main {
+  display: block;
+  padding-bottom: util.rem(120px);
+}
+
+.widget_wrap {
+  display: flex;
+  gap: util.rem(30px);
+}
+
+.widget {
+  flex-grow: 1;
+
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: util.rem(991px)) {
+  .main {
+    display: none;
+  }
+}

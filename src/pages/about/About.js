@@ -1,12 +1,11 @@
-
-import AboutHeader from "../about/components/aboutHeader"
-import AboutIntro from "./components/aboutIntro";
-import AboutSection from "./components/aboutSection";
-import AboutSectionTwo from "./components/aboutSectionTwo";
-import AboutSectionThree from "./components/aboutSectionThree";
-import AboutHistory from "./components/aboutHisory";
+import AboutHeader from "./components/AboutHeader";
+import AboutIntro from "./components/AboutIntro";
+import AboutSection from "./components/AboutSection";
+import AboutSectionTwo from "./components/AboutSectionTwo";
+import AboutSectionThree from "./components/AboutSectionThree";
+import AboutHistory from "./components/AboutHisory";
 import Contact from "./components/Contact";
-
+import WidgetSection from "./components/WidgetSection";
 
 export default function About() {
   return (
@@ -14,6 +13,7 @@ export default function About() {
       <AboutHeader />
       <AboutIntro />
       <AboutSection />
+      <WidgetSection />
       <AboutSectionTwo />
       <AboutSectionThree />
       <AboutHistory />

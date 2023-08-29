@@ -1,161 +1,60 @@
-@use 'util';
+@use "../../../../style/util";
+@use "../../../../style/colors";
 
+.contents_wrap {
+  display: flex;
+  text-align: left;
+}
 
-.container {
+.title_table {
+  flex-grow: 6;
+  padding: util.rem(30px) util.rem(100px);
+}
 
-  max-width: 100%;
-  height: util.rem(865px);
+.text_table {
+  flex-grow: 5;
+  word-wrap: break-word;
 
-  @media screen and (max-width: util.rem(990px)) {
-    width: util.rem(1165.18px);
-    height: util.rem(567.59px);
+  font-size: util.rem(14px);
+  line-height: 1.8;
+
+  p:last-child {
+    text-align: right;
+  }
+}
+
+.title_wrap {
+  font-size: util.rem(18px);
+  line-height: 1.5;
+  color: #172353;
+}
+
+.subtitle_wrap {
+  p {
+    white-space: nowrap;
+
+    span {
+      line-height: 1.6;
+    }
   }
 
+  p:nth-child(2) {
+    color: #021e8c;
+  }
+}
 
-  .items{
-
-    display: flex;
-    width: util.rem(1280px);
-    height: 100%;
-    margin: 0 auto;
-    padding-bottom: util.rem(180px);
-
-  .left {
-
-    margin-left: 8%;
-    flex: none; // 고정
-    min-width: 50%;
-    height: 100%;
-    padding-top: util.rem(54px);
-    padding-left: util.rem(15px);
-    padding-right: util.rem(15px);
-
-    .a{
-
-      width: util.rem(610px);
-      height: util.rem(24px);
-      font-size: util.rem(18px);
-      color: rgb(23, 35, 83);
-      font-weight: bolder;
-      border-style: solid;
-      border-color: #e5e7eb;
-      font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-
-    }
-
-    .b{
-
-      width: util.rem(610px);
-      height: util.rem(72px);
-      color: rgb( 0,0,0);
-      font-size: util.rem(45px);
-      font-weight: 700;
-      font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-
-    }
-
-    .c{
-
-      width: util.rem(610px);
-      height: util.rem(72px);
-      color: #021E8C;
-      font-size: util.rem(45px);
-      font-weight: 700;
-      font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-    }
-
-
-    }
-
-    .right {
-      flex: 1; // 늘어날 수 있으므로
-      width: util.rem(533.33px);
-      height: util.rem(654px);
-      padding: util.rem(0px) util.rem(15px);
-
-      .space{
-        width: util.rem(503.33px);
-        height: util.rem(24px);
-      }
-
-      .one{
-        display: grid;
-        width: util.rem(503.33px);
-        height: util.rem(72px);
-        font-size: util.rem(14px);
-        color: #363636;
-        text-align: left;
-        line-height: util.rem(25px);
-        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-
-
-      }
-
-      .two{
-
-        width: util.rem(503.33px);
-        height: util.rem(96px);
-        font-size: util.rem(14px);
-        color: #363636;
-        text-align: left;
-        line-height: util.rem(25px);
-        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-
-      }
-
-      .three{
-        width: util.rem(503.33px);
-        height: util.rem(96px);
-        font-size: util.rem(14px);
-        color: #363636;
-        text-align: left;
-        line-height: util.rem(25px);
-        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-      }
-
-      .four{
-
-        width: util.rem(503.33px);
-        height: util.rem(120px);
-        font-size: util.rem(14px);
-        color: #363636;
-        text-align: left;
-        margin: 0;
-        line-height: util.rem(25px);
-        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-
-      }
-
-      .five{
-
-        width: util.rem(503.33px);
-        height: util.rem(120px);
-        font-size: util.rem(14px);
-        color: #363636;
-        text-align: left;
-        margin: 0;
-        line-height: util.rem(25px);
-        font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-
-
-      }
-
-      .last{
-
-        width: util.rem(503.33px);
-        height: util.rem(48px);
-        text-align: right;
-
-        strong{
-          font-size: util.rem(15px);
-          color: #363636;
-          font-weight: 700;
-          font-family: 'Spoqa Han Sans Neo', 'sans-serif';
-        }
-
-      }
-    }
-
+@media screen and (max-width: 991px) {
+  .contents_wrap {
+    flex-direction: column;
+    text-align: center;
   }
 
+  .text_table {
+    padding: util.rem(10px) 0;
+    text-align: left;
+
+    p:last-child {
+      display: none;
+    }
+  }
 }
