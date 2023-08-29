@@ -9,10 +9,14 @@ import WidgetSection from "./components/WidgetSection";
 
 import AutoSlider from "./components/AutoSlider";
 import SliderArr from "./components/SliderArr";
+import { Helmet } from "react-helmet";
 
 export default function About() {
   return (
     <>
+      <Helmet>
+        <title>회사소개</title>
+      </Helmet>
       <AboutHeader />
       <AboutIntro />
       <AboutSection />
