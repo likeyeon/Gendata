@@ -1,15 +1,11 @@
-import styles from "../components/scss/aboutHeader.module.scss";
+import Title from "../../../components/title/Title";
 
-const aboutHeader = () => (
+const AboutHeader = () => {
+  return (
+    <>
+      <Title title="ABOUT" titleClassName="TitleBig" />
+    </>
+  );
+};
 
-  <div className={styles.container}>
-   <div className={styles.item}>
-    <div className={styles.textheader}>
-      <p className={styles.text}>ABOUT</p>
-    </div>
-   </div>
-  </div>
-
-);
-
-export default aboutHeader;
+export default AboutHeader;

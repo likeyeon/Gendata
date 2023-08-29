@@ -1,21 +1,28 @@
-import styles from './scss/aboutSectionTwo.module.scss';
+import styles from "./scss/AboutSectionTwo.module.scss";
+import logo_dark from "../../../assets/gnb/logo_dark.png";
+import logo_white from "../../../assets/gnb/logo_white.png";
 
-const aboutSectionTwo = () => (
-  <div className={styles.container}>
-    <div className={styles.space}></div>
-    <div className={styles.gen}>
-      <img src='https://cdn.imweb.me/thumbnail/20230702/b7d4b302e1e7b.png'/>
+const AboutSectionTwo = () => (
+  <>
+    <div className={styles.banner_pc}>
+      <div className={styles.logo_wrap}>
+        <img src={logo_dark} alt="logo" />
+      </div>
+      <div className={styles.text_wrap}>
+        <p>KOREA 2023 AI STARTUPS 343 기업</p>
+        <p>NIA 주관 D.N.A 분야 180대 혁신 기업</p>
+      </div>
     </div>
-    <div className={styles.bar}></div>
-    <div className={styles.korea}>
-      <p className={styles.text}>
-      KOREA 2023 AI STARTUPS 343 기업
-      </p>
-      <p className={styles.text}>
-      NIA 주관 D.N.A 분야 180대 혁신 기업
-      </p>
+    <div className={styles.banner_mobile}>
+      <div className={styles.logo_wrap}>
+        <img src={logo_white} alt="logo" />
+      </div>
+      <div className={styles.text_wrap}>
+        <p>KOREA 2023 AI STARTUPS 343 기업</p>
+        <p>NIA 주관 D.N.A 분야 180대 혁신 기업</p>
+      </div>
     </div>
-  </div>
+  </>
 );
 
-export default aboutSectionTwo;
+export default AboutSectionTwo;
