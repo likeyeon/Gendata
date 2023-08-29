@@ -58,3 +58,9 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .title_table {
+    padding: 0 0 util.rem(20px) 0;
+  }
+}
