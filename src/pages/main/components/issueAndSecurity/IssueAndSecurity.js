@@ -48,10 +48,10 @@ const IssueAndSecurity = () => {
             </div>
           ))}
         </div>
+        <CommonButton buttonData={data} />
         <div className={styles.minImg}>
           <ClickSlider ImgArr={ImgArr} />
         </div>
-        <CommonButton buttonData={data} />
       </div>
     </>
   );
