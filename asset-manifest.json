@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Gendata/static/css/main.b9a7d12f.css",
-    "main.js": "/Gendata/static/js/main.3832a52f.js",
+    "main.js": "/Gendata/static/js/main.e107a4ff.js",
     "static/js/787.10e76009.chunk.js": "/Gendata/static/js/787.10e76009.chunk.js",
     "static/media/data_type_img_tab1.png": "/Gendata/static/media/data_type_img_tab1.c0b946917e7ee6e0660c.png",
     "static/media/data_type_img_tab3.png": "/Gendata/static/media/data_type_img_tab3.cf050fa94f05638c57ee.png",
@@ -136,11 +136,11 @@
     "static/media/data_collection_equip4.png": "/Gendata/static/media/data_collection_equip4.885e8b079cef3a44dcd2.png",
     "index.html": "/Gendata/index.html",
     "main.b9a7d12f.css.map": "/Gendata/static/css/main.b9a7d12f.css.map",
-    "main.3832a52f.js.map": "/Gendata/static/js/main.3832a52f.js.map",
+    "main.e107a4ff.js.map": "/Gendata/static/js/main.e107a4ff.js.map",
     "787.10e76009.chunk.js.map": "/Gendata/static/js/787.10e76009.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b9a7d12f.css",
-    "static/js/main.3832a52f.js"
+    "static/js/main.e107a4ff.js"
   ]
 }
