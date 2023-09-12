@@ -27,76 +27,75 @@ import DataDealing from "./pages/data-dealing/DataDealing";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: `${process.env.PUBLIC_URL}/`,
     element: <App component={<Main />} />,
   },
   {
-    path: "/introduce",
+    path: `${process.env.PUBLIC_URL}/introduce`,
     element: <App component={<About />} />,
   },
   {
-    path: "/government-support-project",
+    path: `${process.env.PUBLIC_URL}/government-support-project`,
     element: <App component={<Government />} />,
   },
   {
-    path: "/data-dealing",
+    path: `${process.env.PUBLIC_URL}/data-dealing`,
     element: <App component={<DataDealing />} />,
   },
   {
-    path: "/gendata-service-labeling",
+    path: `${process.env.PUBLIC_URL}/gendata-service-labeling`,
     element: <App component={<ServiceLabeling />} />,
   },
   {
-    path: "/data-collection",
+    path: `${process.env.PUBLIC_URL}/data-collection`,
     element: <App component={<DataCollection />} />,
   },
   {
-    path: "/inhouse-operation",
+    path: `${process.env.PUBLIC_URL}/inhouse-operation`,
     element: <App component={<InHouseOperation />} />,
   },
   {
-    path: "/ai-development",
+    path: `${process.env.PUBLIC_URL}/ai-development`,
     element: <App component={<AiDevelopment />} />,
   },
   {
-    path: "/ai-education",
+    path: `${process.env.PUBLIC_URL}/ai-education`,
     element: <App component={<Education />} />,
   },
-
   {
-    path: "AI-data-project",
+    path: `${process.env.PUBLIC_URL}/AI-data-project`,
     element: <App component={<ProjectDevelop />} />,
   },
   {
-    path: "AI-service-paga",
+    path: `${process.env.PUBLIC_URL}/AI-service-paga`,
     element: <App component={<AiService />} />,
   },
   {
-    path: "/news",
+    path: `${process.env.PUBLIC_URL}/news`,
     element: <App component={<News />} />,
   },
   {
-    path: "/news/:newsId",
+    path: `${process.env.PUBLIC_URL}/news/:newsId`,
     element: <App component={<NewsContents />} />,
   },
   {
-    path: "/contact",
+    path: `${process.env.PUBLIC_URL}/contact`,
     element: <App component={<Contact />} />,
   },
   {
-    path: "/data-process-3d",
+    path: `${process.env.PUBLIC_URL}/data-process-3d`,
     element: <App component={<DataProcess3d />} />,
   },
   {
-    path: "/data-process-text",
+    path: `${process.env.PUBLIC_URL}/data-process-text`,
     element: <App component={<DataProcessText />} />,
   },
   {
-    path: "/data-process-video",
+    path: `${process.env.PUBLIC_URL}/data-process-video`,
     element: <App component={<DataProcessVideo />} />,
   },
   {
-    path: "/data-process-audio",
+    path: `${process.env.PUBLIC_URL}/data-process-audio`,
     element: <App component={<DataProcessAudio />} />,
   },
 ]);
