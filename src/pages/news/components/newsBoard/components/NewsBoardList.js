@@ -42,9 +42,7 @@ const NewsBoardList = () => {
             {board.id}
           </div>
           <div className={`${styles.newsTitle}`}>
-            <Link to={`${process.env.PUBLIC_URL}/</div>/news/${board.id}`}>
-              {board.title}
-            </Link>
+            <Link to={`/news/${board.id}`}>{board.title}</Link>
           </div>
           <div className={`${styles.newsDate} ${styles.hide}`}>
             {board.date}
