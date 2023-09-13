@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://likeyeon.github.io/Gendata/static/css/main.7025ccd8.css",
-    "main.js": "https://likeyeon.github.io/Gendata/static/js/main.c75e7aa1.js",
+    "main.js": "https://likeyeon.github.io/Gendata/static/js/main.dc595ff6.js",
     "static/js/787.10e76009.chunk.js": "https://likeyeon.github.io/Gendata/static/js/787.10e76009.chunk.js",
     "static/media/data_type_img_tab1.png": "https://likeyeon.github.io/Gendata/static/media/data_type_img_tab1.c0b946917e7ee6e0660c.png",
     "static/media/data_type_img_tab3.png": "https://likeyeon.github.io/Gendata/static/media/data_type_img_tab3.cf050fa94f05638c57ee.png",
@@ -136,11 +136,11 @@
     "static/media/data_collection_equip4.png": "https://likeyeon.github.io/Gendata/static/media/data_collection_equip4.885e8b079cef3a44dcd2.png",
     "index.html": "https://likeyeon.github.io/Gendata/index.html",
     "main.7025ccd8.css.map": "https://likeyeon.github.io/Gendata/static/css/main.7025ccd8.css.map",
-    "main.c75e7aa1.js.map": "https://likeyeon.github.io/Gendata/static/js/main.c75e7aa1.js.map",
+    "main.dc595ff6.js.map": "https://likeyeon.github.io/Gendata/static/js/main.dc595ff6.js.map",
     "787.10e76009.chunk.js.map": "https://likeyeon.github.io/Gendata/static/js/787.10e76009.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7025ccd8.css",
-    "static/js/main.c75e7aa1.js"
+    "static/js/main.dc595ff6.js"
   ]
 }
